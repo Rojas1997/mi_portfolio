@@ -393,7 +393,7 @@ footer{
 }
 
 .aboutme_foto_text {
-  background-image: url('../img/fotos/hombre.avif');
+  background-image: url('/IMG/fotos/hombre.avif');
   background-size: cover;
   border-radius: 0.8rem; /* 8px */
   grid-area: 1 / 1 / 6 / 4;
@@ -808,7 +808,7 @@ display: none;
     .aboutme_animation {
       width: auto;
       height: 100%; 
-      background-image: url('/img/fotos/hombre.avif');
+      background-image: url('../img/fotos/hombre.avif');
       background-size: cover; /* La imagen se ajustará al contenedor sin distorsionar su aspecto */
       grid-area: 3 / 2 / 4 / 3; /* Tercera fila, segunda columna */
     }
