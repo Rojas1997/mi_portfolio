@@ -393,7 +393,7 @@ footer{
 }
 
 .aboutme_foto_text {
-  background-image: url('/IMG/fotos/hombre.avif');
+  background-image: url('../img/fotos/hombre.avif');
   background-size: cover;
   border-radius: 0.8rem; /* 8px */
   grid-area: 1 / 1 / 6 / 4;
