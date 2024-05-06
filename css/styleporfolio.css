@@ -650,7 +650,7 @@ input::placeholder, textarea::placeholder{
   margin-top: 30rem;
   margin-bottom: 0; /* Eliminar el margen inferior */
   display: flex;
-  margin-left: 25%;
+  margin-left: 30%;
   color: rgb(240, 240, 240);
 }
 
@@ -668,7 +668,7 @@ input::placeholder, textarea::placeholder{
 
 .container_textanimation {
   display: flex;
-  margin: 25%;
+  margin: 30%;
   margin-top: 0; /* Eliminar el margen superior */
 }
 
@@ -762,6 +762,7 @@ input::placeholder, textarea::placeholder{
 
 
 /*FIN DE HOME*/
+
     /* INICIO NAV FOOTER*/
 footer{
 margin-bottom: 1rem;
