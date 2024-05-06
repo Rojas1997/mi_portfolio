@@ -225,12 +225,13 @@ body {
 /* INICIO de PROYECTOS PESTAÑA 2*/
 
 .grid_proyec_2 {
-  margin: 4% 20rem 0rem 8rem;
-  min-height: 100vh;
+  width: 70%;
+  margin: 0 auto; /* Centra horizontalmente */
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr;
 }
+
 
 .informacion_box{
   cursor: pointer;
@@ -253,6 +254,7 @@ body {
 }
 
 .informacion_box p {
+  
   color: rgb(129, 129, 129);
   transition: color 0.3s;
 }
@@ -260,6 +262,7 @@ body {
 .informacion_box p:hover {
   color: white;
 }
+
 
 .contenido_proyecto_content {
   display: flex;
@@ -303,6 +306,10 @@ body {
 .grid_proyec_2_contenido_titulo p {
   margin-bottom: 0;
 }
+
+
+/* FIN DE CONTENIDO PROYECTOS P2*/
+
 
 .contenido_proyecto_content{
   display: flex;
