@@ -639,134 +639,134 @@ input::placeholder, textarea::placeholder{
 
 
 @media (max-width: 480px){
-    /* Celulares*/
+  /* Celulares*/
 
 
-    /* INICIO NAV FOOTER*/
+  /* INICIO NAV FOOTER*/
 footer{
 margin-bottom: 1rem;
 }
 
 .nav_conten_a{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0px 0.2rem 0px 1rem; /* 0px 10px 0px 10px */
-  text-decoration: none;
-  color: black;
-  padding: 0.4rem; /* 4px */
-  border-bottom: 0.1rem solid transparent; /* 1px */
-  transition: border-bottom-color 0.3s; /* Transición suave */
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0px 0.2rem 0px 1rem; /* 0px 10px 0px 10px */
+text-decoration: none;
+color: black;
+padding: 0.4rem; /* 4px */
+border-bottom: 0.1rem solid transparent; /* 1px */
+transition: border-bottom-color 0.3s; /* Transición suave */
 }
 
 .nav_conten_a:hover{
-  color: gray;
-  border-bottom-color: #000; /* Cambia el color de la línea al pasar el ratón */
+color: gray;
+border-bottom-color: #000; /* Cambia el color de la línea al pasar el ratón */
 }
 
 .nav_conten_a p{
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.3rem; /* 16px */
-  margin-left: 0.5rem; /* 5px */
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.3rem; /* 16px */
+margin-left: 0.5rem; /* 5px */
 }
 
 .nav_conten_a i{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2.4rem; /* 24px */
-  height: 2.4rem; /* 24px */
+display: flex;
+justify-content: center;
+align-items: center;
+width: 2.4rem; /* 24px */
+height: 2.4rem; /* 24px */
 }
 
 .nav_bar{
-  width: 430px;
-  border-radius: 4rem; /* 18px */
-  padding: 0.6rem 1.6rem; /* 6px 16px */
-  display: flex;
-  justify-content: space-between;
+width: 430px;
+border-radius: 4rem; /* 18px */
+padding: 0.6rem 1.6rem; /* 6px 16px */
+display: flex;
+justify-content: space-between;
 }
 
 
 
-    /* FIN NAV FOOTER*/
+  /* FIN NAV FOOTER*/
 
-    /* INICIO NAV HEADER SWICH*/
+  /* INICIO NAV HEADER SWICH*/
 
 .switch-container .button {
-  border: 0.02rem solid rgb(186, 186, 186); /* 0.2px */
-  background-color: rgba(255, 255, 255, 0.7);
-  width: 4rem; /* 40px */
-  height: 2.2rem; /* 22px */
-  border-radius: 3rem; /* 30px */
-  cursor: pointer;
-  position: relative;
+border: 0.02rem solid rgb(186, 186, 186); /* 0.2px */
+background-color: rgba(255, 255, 255, 0.7);
+width: 4rem; /* 40px */
+height: 2.2rem; /* 22px */
+border-radius: 3rem; /* 30px */
+cursor: pointer;
+position: relative;
 }
 
 .switch-container .button::before {
-  position: absolute;
-  content: '';
-  background-color: #ffffff;
-  width: 1.8rem; /* 18px */
-  height: 1.8rem; /* 18px */
-  border-radius: 3rem; /* 30px */
-  margin: 0.2rem; /* 2px */
-  transition: 0.2s;
+position: absolute;
+content: '';
+background-color: #ffffff;
+width: 1.8rem; /* 18px */
+height: 1.8rem; /* 18px */
+border-radius: 3rem; /* 30px */
+margin: 0.2rem; /* 2px */
+transition: 0.2s;
 }
 
 .switch-container input:checked + .button::before {
-  transform: translateX(1.6rem); /* 16px */
+transform: translateX(1.6rem); /* 16px */
 }
 
-    /* FINAL NAV HEADER SWICH*/
+  /* FINAL NAV HEADER SWICH*/
 
 
-    .dropdown-menu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      z-index: 1;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      border: 0.1rem solid #ccc; /* 1px */
-      border-radius: 0.5rem; /* 5px */
-      box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
-      display: none;
-      margin-top: 0.5rem;
-    }
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 0.1rem solid #ccc; /* 1px */
+    border-radius: 0.5rem; /* 5px */
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    display: none;
+    margin-top: 0.5rem;
+  }
 
-    /* INICIO PROYECTOS 1 - PROYECTOS CONTENEDOR*/
+  /* INICIO PROYECTOS 1 - PROYECTOS CONTENEDOR*/
 
-    .proyectos_contedor {  
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      grid-template-columns: 1fr; 
-    }
-    
-    .colum1,
-    .colum2,
-    .colum3 {
-      grid-area: auto; 
-    }
-
-
-    /* FIN  PROYECTOS 1 - PROYECTOS CONTENEDOR*/
+  .proyectos_contedor {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr; 
+  }
+  
+  .colum1,
+  .colum2,
+  .colum3 {
+    grid-area: auto; 
+  }
 
 
+  /* FIN  PROYECTOS 1 - PROYECTOS CONTENEDOR*/
 
-    /* INICIO  PROYECTOS 2 - PROYECTOS CONTENEDOR*/
 
+
+  /* INICIO  PROYECTOS 2 - PROYECTOS CONTENEDOR*/
 
 .grid_proyec_2 {
+width: 90%;
 grid-template-columns: 1fr; 
 grid-template-rows: auto; 
 padding: 0;
-margin: 1rem; 
+margin: 1rem auto; /* Centra horizontalmente */
 min-height: auto; 
 }
 
@@ -784,103 +784,365 @@ color: white;
 display: none; 
 
 }
+/* FIN DE PROYECTOS 2*/
 
-    /* FIN  PROYECTOS 2 - PROYECTOS CONTENEDOR*/
-    
-    .aboutme_contenedor {
-      grid-template-columns: 1fr 2fr; /* La segunda columna tiene el doble de ancho que la primera */
-      grid-template-rows: auto auto auto; /* Tres filas */
-      grid-row-gap: 1rem; /* Ajustar el espacio entre filas */
-    }
-    
-    .aboutme_foto_text {
-      grid-area: 1 / 1 / 2 / 3; /* Ocupa la primera fila y ambas columnas */
-    }
-    
-    .aboutme_information {
-      grid-area: 2 / 1 / 3 / 3; /* Ocupa la segunda fila y ambas columnas */
-    }
-    
-    .aboutme_map {
-      grid-area: 3 / 1 / 4 / 2; /* Tercera fila, primera columna */
-    }
-    
-    .aboutme_animation {
-      width: auto;
-      height: 100%; 
-      background-image: url('../img/fotos/hombre.avif');
-      background-size: cover; /* La imagen se ajustará al contenedor sin distorsionar su aspecto */
-      grid-area: 3 / 2 / 4 / 3; /* Tercera fila, segunda columna */
-    }
-    
-    
 
-    
-    .Menu-contenido{
-      margin: 10rem auto; /* 140px */
-    }
-    
-    .select-menu {
-      width: 90%;
-      margin: 1rem auto; /* 10px */
-    }
-    
+  /* INICIO ABOUT ME- PROYECTOS CONTENEDOR*/
+  
+  .aboutme_contenedor {
+    grid-template-columns: 1fr 2fr; /* La segunda columna tiene el doble de ancho que la primera */
+    grid-template-rows: auto auto auto; /* Tres filas */
+    grid-row-gap: 1rem; /* Ajustar el espacio entre filas */
+  }
+  
+  .aboutme_foto_text {
+    grid-area: 1 / 1 / 2 / 3; /* Ocupa la primera fila y ambas columnas */
+  }
+  
+  .aboutme_information {
+    grid-area: 2 / 1 / 3 / 3; /* Ocupa la segunda fila y ambas columnas */
+  }
+  
+  .aboutme_map {
+    grid-area: 3 / 1 / 4 / 2; /* Tercera fila, primera columna */
+  }
+  
+  .aboutme_animation {
+    width: auto;
+    height: 100%; 
+    background-image: url('../img/fotos/hombre.avif');
+    background-size: cover; /* La imagen se ajustará al contenedor sin distorsionar su aspecto */
+    grid-area: 3 / 2 / 4 / 3; /* Tercera fila, segunda columna */
+  }
+  
+  .Menu-contenido{
+    margin: 10rem auto; /* 140px */
+  }
+  
+  .select-menu {
+    width: 90%;
+    margin: 1rem auto; /* 10px */
+  }
+
+
+
+  .aboutme_section{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    padding: 100px 0px 0px 0.5rem; /* 0px 0px 0px 5px */
+  }
+  
+  .aboutme_section h1 {
+    font-size: 2.2rem; /* 42px */
+    margin-bottom: 0;
+  }
+  
+  .aboutme_section h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem; /* 24px */
+    margin-top: 0;
+    margin-bottom: 1rem; /* 10px */
+  }
+  
+  /* FIN  ABOUT ME*/
 
 }
 
 
-@media (max-width: 769px)  {
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait)  {
 
 /* INICIO NAV FOOTER*/
-  footer{ 
-    margin-bottom: 1rem;
-    }
-    
-    .nav_conten_a{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0px 0.2rem 0px 1rem; /* 0px 10px 0px 10px */
-      text-decoration: none;
-      color: black;
-      padding: 0.4rem; /* 4px */
-      border-bottom: 0.1rem solid transparent; /* 1px */
-      transition: border-bottom-color 0.3s; /* Transición suave */
-    }
-    
-    .nav_conten_a:hover{
-      color: gray;
-      border-bottom-color: #000; /* Cambia el color de la línea al pasar el ratón */
-    }
-    
-    .nav_conten_a p{
-      font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 1.3rem; /* 16px */
-      margin-left: 0.5rem; /* 5px */
-    }
-    
-    .nav_conten_a i{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 2.4rem; /* 24px */
-      height: 2.4rem; /* 24px */
-    }
-    
-    .nav_bar{
-      width: 430px;
-      border-radius: 4rem; /* 18px */
-      padding: 0.6rem 1.6rem; /* 6px 16px */
-      display: flex;
-      justify-content: space-between;
-    }
-    
-    
-    
-        /* FIN NAV FOOTER*/
 
-        /*  PROYECTOS 1*/
+
+.nav_conten_a{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0px 0.2rem 0px 1rem; /* 0px 10px 0px 10px */
+text-decoration: none;
+color: black;
+padding: 0.4rem; /* 4px */
+border-bottom: 0.1rem solid transparent; /* 1px */
+transition: border-bottom-color 0.3s; /* Transición suave */
+}
+
+.nav_conten_a p{
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.3rem; /* 16px */
+margin-left: 0.5rem; /* 5px */
+}
+
+.nav_bar{
+width: 430px;
+border-radius: 4rem; /* 18px */
+padding: 0.6rem 1.6rem; /* 6px 16px */
+display: flex;
+justify-content: space-between;
+}
+
+/* FIN NAV FOOTER*/
+
+/*  PROYECTOS 1*/
+.proyectos_contedor {
+grid-template-columns: repeat(2, 1fr); /* Cambiar a 2 columnas */
+}
+
+.colum1 {
+grid-area: 1 / 1 / 2 / 2;
+}
+
+.colum2 {
+grid-area: 1 / 2 / 2 / 3;
+}
+
+.colum3 {
+grid-area: 2 / 1 / 3 / 2; /* Posicionar la tercera columna abajo de la primera columna */
+}
+
+
+
+
+.contenedor_info{
+margin-top: 1rem; /* 10px */
+border-radius: 1rem; /* 10px */
+padding: 1rem; /* 10px */
+background-color: white;
+height: auto;
+}
+
+
+
+.info_bar p{
+font-size: 15px;
+color: #000;
+}
+
+
+.p_elemento{
+display: none;
+margin-left: 0.5rem; /* 5px */
+background: grey;
+padding: 0.2rem; /* 2px */
+border-radius: 0.4rem; /* 4px */
+color: white;
+}
+
+
+
+/* INICIO  PROYECTOS 2 - PROYECTOS CONTENEDOR*/
+.grid_proyec_2 {
+width: 90%;
+grid-template-columns: 1fr; 
+grid-template-rows: auto; 
+padding: 0;
+margin: 1rem auto; /* Centra horizontalmente */
+min-height: auto; 
+}
+
+.informacion_box {
+width: 24px;
+position: static;
+margin-left: 10px;
+}
+
+.informacion_box a:hover {
+color: white;
+}
+
+.informacion_box p {
+display: none; 
 
 }
+/* FIN DE PROYECTOS 2*/
+
+
+
+
+/*Inicio de About me*/
+.aboutme_contenedor {
+grid-template-columns: 1fr 2fr; /* La segunda columna tiene el doble de ancho que la primera */
+grid-template-rows: auto auto auto; /* Tres filas */
+grid-row-gap: 1rem; /* Ajustar el espacio entre filas */
+}
+
+.aboutme_foto_text {
+grid-area: 1 / 1 / 2 / 3; /* Ocupa la primera fila y ambas columnas */
+}
+
+.aboutme_information {
+grid-area: 2 / 1 / 3 / 3; /* Ocupa la segunda fila y ambas columnas */
+}
+
+.aboutme_map {
+grid-area: 3 / 1 / 4 / 2; /* Tercera fila, primera columna */
+}
+
+.aboutme_animation {
+width: auto;
+height: 100%; 
+background-image: url('../img/fotos/hombre.avif');
+background-size: cover; /* La imagen se ajustará al contenedor sin distorsionar su aspecto */
+grid-area: 3 / 2 / 4 / 3; /* Tercera fila, segunda columna */
+}
+
+
+.Menu-contenido{
+margin: 10rem auto; /* 140px */
+}
+
+.select-menu {
+width: 90%;
+margin: 1rem auto; /* 10px */
+}
+
+
+.aboutme_section{
+display: flex;
+flex-direction: column;
+margin-top: auto;
+padding: 100px 0px 0px 0.5rem; /* 0px 0px 0px 5px */
+}
+
+.aboutme_section h1 {
+font-size: 2.2rem; /* 42px */
+margin-bottom: 0;
+}
+
+.aboutme_section h4 {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem; /* 24px */
+margin-top: 0;
+margin-bottom: 1rem; /* 10px */
+}
+/* FIN ABOUT ME*/
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+/* INICIO NAV BAR*/
+.nav_conten_a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0.2rem 0px 1rem; /* 0px 10px 0px 10px */
+  text-decoration: none;
+  color: black;
+  padding: 0.4rem; /* 4px */
+  border-bottom: 0.1rem solid transparent; /* 1px */
+  transition: border-bottom-color 0.3s; /* Transición suave */
+  }
+  
+  .nav_conten_a p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem; /* 16px */
+  margin-left: 0.5rem; /* 5px */
+  }
+  
+  .nav_bar{
+  width: 430px;
+  border-radius: 4rem; /* 18px */
+  padding: 0.6rem 1.6rem; /* 6px 16px */
+  display: flex;
+  justify-content: space-between;
+  }
+
+    /* FIN NAV BAR*/
+
+    
+/* INICIO  PROYECTOS 2 - PROYECTOS CONTENEDOR*/
+    .contenedor_info{
+      border-radius: 1rem; /* 10px */
+      padding: 1rem; /* 10px */
+      background-color: white;
+      height: auto;
+    }
+    
+    
+    
+    .info_bar p{
+      font-size: 13px;
+      color: #000;
+    }
+    
+    
+    .p_elemento{
+      margin-left: 0.2rem; /* 5px */
+      background: grey;
+      padding: 0.2rem; /* 2px */
+      border-radius: 0.4rem; /* 4px */
+      color: white;
+    }
+
+    .info_icon i{
+      padding: 0.2rem; /* 6px */
+      color: gray;
+    }
+
+/* FIN  PROYECTOS 1 - PROYECTOS CONTENEDOR*/
+
+
+/* INICIO de PROYECTOS PESTAÑA 2*/
+
+.grid_proyec_2 {
+width: 90%;
+margin: 0 auto; /* Centra horizontalmente */
+display: grid;
+grid-template-columns: 1fr 4fr;
+grid-template-rows: 1fr;
+}
+
+
+/* FIN DE CONTENIDO PROYECTOS P2*/
+
+
+
+.aboutme_section{
+display: flex;
+flex-direction: column;
+margin-top: auto;
+padding: 100px 0px 0px 0.5rem; /* 0px 0px 0px 5px */
+}
+
+.aboutme_section h1 {
+font-size: 2.2rem; /* 42px */
+margin-bottom: 0;
+}
+
+.aboutme_section h4 {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem; /* 24px */
+margin-top: 0;
+margin-bottom: 1rem; /* 10px */
+}
+
+
+.select-menu {
+width: 90%;
+margin: 1rem auto; /* 10px */
+}
+
+}
+
+
+.aboutme_footer button{
+border: none;
+border-radius: 2rem; /* 20px */
+width: 12rem; /* 120px */
+height: 4rem; /* 40px */
+margin: 0.2rem; /* 2px */
+
+}
+
