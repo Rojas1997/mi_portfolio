@@ -647,7 +647,7 @@ input::placeholder, textarea::placeholder{
 /* INICIO - TEXT ANIMATION*/
 
 .nav_presntacion{
-  margin-top: 30rem;
+  margin-top: 25rem;
   margin-bottom: 0; /* Eliminar el margen inferior */
   display: flex;
   margin-left: 30%;
