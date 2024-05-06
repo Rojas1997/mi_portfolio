@@ -400,6 +400,7 @@ height: 2.4rem; /* 24px */
 }
 
 .aboutme_foto_text {
+  height: 400px;
   background-image: url('../img/fotos/hombre.avif');
   background-size: cover;
   border-radius: 0.8rem; /* 8px */
