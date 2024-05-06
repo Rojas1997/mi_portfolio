@@ -763,55 +763,56 @@ input::placeholder, textarea::placeholder{
 
 /*FIN DE HOME*/
 
+   
     /* INICIO NAV FOOTER*/
 footer{
-margin-bottom: 1rem;
-}
-
-.nav_conten_a{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0px 0.2rem 0px 1rem; /* 0px 10px 0px 10px */
-  text-decoration: none;
-  color: black;
-  padding: 0.4rem; /* 4px */
-  border-bottom: 0.1rem solid transparent; /* 1px */
-  transition: border-bottom-color 0.3s; /* Transición suave */
-}
-
-.nav_conten_a:hover{
-  color: gray;
-  border-bottom-color: #000; /* Cambia el color de la línea al pasar el ratón */
-}
-
-.nav_conten_a p{
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.3rem; /* 16px */
-  margin-left: 0.5rem; /* 5px */
-}
-
-.nav_conten_a i{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2.4rem; /* 24px */
-  height: 2.4rem; /* 24px */
-}
-
-.nav_bar{
-  width: 430px;
-  border-radius: 4rem; /* 18px */
-  padding: 0.6rem 1.6rem; /* 6px 16px */
-  display: flex;
-  justify-content: space-between;
-}
-
-
-
-    /* FIN NAV FOOTER*/
+  margin-bottom: 1rem;
+  }
+  
+  .nav_conten_a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0.2rem 0px 1rem; /* 0px 10px 0px 10px */
+    text-decoration: none;
+    color: black;
+    padding: 0.4rem; /* 4px */
+    border-bottom: 0.1rem solid transparent; /* 1px */
+    transition: border-bottom-color 0.3s; /* Transición suave */
+  }
+  
+  .nav_conten_a:hover{
+    color: gray;
+    border-bottom-color: #000; /* Cambia el color de la línea al pasar el ratón */
+  }
+  
+  .nav_conten_a p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem; /* 16px */
+    margin-left: 0.5rem; /* 5px */
+  }
+  
+  .nav_conten_a i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.4rem; /* 24px */
+    height: 1.4rem; /* 24px */
+  }
+  
+  .nav_bar{
+    width: 380px;
+    border-radius: 4rem; /* 18px */
+    padding: 0.6rem 1.6rem; /* 6px 16px */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  
+      /* FIN NAV FOOTER*/
 
     /* INICIO NAV HEADER SWICH*/
 
