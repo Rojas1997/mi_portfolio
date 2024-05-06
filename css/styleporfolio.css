@@ -648,7 +648,7 @@ input::placeholder, textarea::placeholder{
 /* INICIO - TEXT ANIMATION*/
 
 .nav_presntacion{
-  margin-top: 25rem;
+  margin-top: 30rem;
   margin-bottom: 0; /* Eliminar el margen inferior */
   display: flex;
   margin-left: 30%;
@@ -733,6 +733,7 @@ input::placeholder, textarea::placeholder{
 
 @media (max-width: 480px){
     /* Celulares*/
+
 /* INICIO DE HOME */
 
 .nav_presntacion{
@@ -742,6 +743,8 @@ input::placeholder, textarea::placeholder{
   margin-left: 10%;
   color: rgb(240, 240, 240);
 }
+
+
 
 .nav_presntacion p{
   font-size: 2rem;
@@ -764,56 +767,55 @@ input::placeholder, textarea::placeholder{
 
 /*FIN DE HOME*/
 
-   
     /* INICIO NAV FOOTER*/
 footer{
-  margin-bottom: 1rem;
-  }
-  
-  .nav_conten_a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 0.2rem 0px 1rem; /* 0px 10px 0px 10px */
-    text-decoration: none;
-    color: black;
-    padding: 0.4rem; /* 4px */
-    border-bottom: 0.1rem solid transparent; /* 1px */
-    transition: border-bottom-color 0.3s; /* Transición suave */
-  }
-  
-  .nav_conten_a:hover{
-    color: gray;
-    border-bottom-color: #000; /* Cambia el color de la línea al pasar el ratón */
-  }
-  
-  .nav_conten_a p{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem; /* 16px */
-    margin-left: 0.5rem; /* 5px */
-  }
-  
-  .nav_conten_a i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1.4rem; /* 24px */
-    height: 1.4rem; /* 24px */
-  }
-  
-  .nav_bar{
-    width: 380px;
-    border-radius: 4rem; /* 18px */
-    padding: 0.6rem 1.6rem; /* 6px 16px */
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  
-  
-      /* FIN NAV FOOTER*/
+margin-bottom: 1rem;
+}
+
+.nav_conten_a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0.2rem 0px 1rem; /* 0px 10px 0px 10px */
+  text-decoration: none;
+  color: black;
+  padding: 0.4rem; /* 4px */
+  border-bottom: 0.1rem solid transparent; /* 1px */
+  transition: border-bottom-color 0.3s; /* Transición suave */
+}
+
+.nav_conten_a:hover{
+  color: gray;
+  border-bottom-color: #000; /* Cambia el color de la línea al pasar el ratón */
+}
+
+.nav_conten_a p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem; /* 16px */
+  margin-left: 0.5rem; /* 5px */
+}
+
+.nav_conten_a i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.4rem; /* 24px */
+  height: 1.4rem; /* 24px */
+}
+
+.nav_bar{
+  width: 380px;
+  border-radius: 4rem; /* 18px */
+  padding: 0.6rem 1.6rem; /* 6px 16px */
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+    /* FIN NAV FOOTER*/
 
     /* INICIO NAV HEADER SWICH*/
 
