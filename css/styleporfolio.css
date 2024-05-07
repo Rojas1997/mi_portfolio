@@ -555,7 +555,7 @@ height: 2.4rem; /* 24px */
 }
 
 .options .option:hover {
-  background: #F2F2F2;
+  background: #cccccc;
 }
 
 .option i {
@@ -567,6 +567,8 @@ height: 2.4rem; /* 24px */
   font-size: 1.8rem; /* 18px */
   color: #333;
 }
+
+
 
 
 /* SOBRE MI FINAL*/
