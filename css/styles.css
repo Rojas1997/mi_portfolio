@@ -3,6 +3,1348 @@
   padding: 0;
 }
 
+<<<<<<< HEAD
+html {
+  font-size: 62.5%; /* Equivale a 10px */
+}
+
+body, input, button, select, textarea {
+  font-size: 1.6rem; /* 16px */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1C2431;
+  min-height: 100vh;
+}
+
+.header-content {
+  padding: 1.4rem; /* 10px */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.language-dropdown {
+  position: relative;
+  margin-right: 1rem; /* 10px */
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-toggle:hover {
+  text-decoration: underline;
+}
+
+.language-icon {
+  display: flex;
+  align-items: center;
+}
+
+.language-icon img {
+  width: 2rem; /* 20px */
+  height: auto;
+  margin-right: 0.5rem; /* 5px */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 0.1rem solid #ccc; /* 1px */
+  border-radius: 0.5rem; /* 5px */
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.language-dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem; /* 5px 10px */
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu img {
+  width: 2rem; /* 20px */
+  height: auto;
+  margin-right: 0.5rem; /* 5px */
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+}
+
+.switch-container input[type="checkbox"] {
+  display: none;
+}
+
+.switch-container .button {
+  border: 0.02rem solid rgb(186, 186, 186); /* 0.2px */
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 5.2rem; /* 52px */
+  height: 2.8rem; /* 28px */
+  border-radius: 6rem; /* 60px */
+  cursor: pointer;
+  position: relative;
+}
+
+.switch-container .button::before {
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+  width: 2.4rem; /* 24px */
+  height: 2.4rem; /* 24px */
+  border-radius: 6rem; /* 60px */
+  margin: 0.2rem; /* 2px */
+  transition: 0.2s;
+}
+
+.switch-container input:checked + .button {
+  background-color: #1794ee;
+}
+
+.switch-container input:checked + .button::before {
+  transform: translateX(2.4rem); /* 24px */
+}
+
+/* Contenedor de proyectos */
+
+.proyectos_contedor {
+  margin-bottom: 20rem;
+  display: grid;
+  padding: 2rem; /* 20px */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 1rem; /* 10px */
+  grid-row-gap: 1rem; /* 10px */
+}
+
+.colum1 { 
+  grid-area: 1 / 1 / 2 / 2; 
+}
+
+.colum2 { 
+  grid-area: 1 / 2 / 2 / 3; 
+}
+
+.colum3 { 
+  grid-area: 1 / 3 / 2 / 4; 
+}
+
+/* Contenedor de lementos*/
+
+.colum1 a{
+  text-decoration: none;
+}
+
+.contenedor_info{
+  margin-top: 1rem; /* 10px */
+  border-radius: 1rem; /* 10px */
+  padding: 1rem; /* 10px */
+  background-color: white;
+  height: auto;
+}
+
+.contenedor_info img{
+  border-radius: 0.8rem; /* 8px */
+  width: 100%;
+}
+
+.info_bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info_bar p{
+  color: #000;
+}
+
+.info_titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p_elemento{
+  margin-left: 0.5rem; /* 5px */
+  background: grey;
+  padding: 0.2rem; /* 2px */
+  border-radius: 0.4rem; /* 4px */
+  color: white;
+}
+
+.p_elemento:hover{
+  background: #1794ee;
+}
+
+.info_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_icon i{
+  padding: 0.6rem; /* 6px */
+  color: gray;
+}
+
+.heart:hover{
+  color: red;
+}
+
+/* fin de PROYECTOS */
+
+
+
+/* INICIO de PROYECTOS PESTAÑA 2*/
+
+.grid_proyec_2 {
+  width: 70%;
+  margin: 0 auto; /* Centra horizontalmente */
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+}
+
+
+.informacion_box{
+  cursor: pointer;
+  margin: 1rem 0rem 0rem 2rem; /* 10px 0px 0px 20px */
+  position: fixed;
+}
+
+.informacion_box a{
+  color: rgb(129, 129, 129);
+  width: 2.4rem; /* 24px */
+  height: 2.4rem; /* 24px */
+}
+
+.informacion__titulos{
+  margin-top: 3rem;
+}
+
+.informacion_box a:hover {
+  color: white;
+}
+
+.informacion_box p {
+  
+  color: rgb(129, 129, 129);
+  transition: color 0.3s;
+}
+
+.informacion_box p:hover {
+  color: white;
+}
+
+
+.contenido_proyecto_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid_proyec_2_contenido_header{
+  padding: 1rem; /* 10px */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid_proyec_2_contenido_heart{
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.2rem; /* 42px */
+  height: 4.2rem; /* 42px */
+  border-radius: 6rem; /* 60px */
+}
+
+.heart_proyect2{
+  color: #000;
+}
+
+.heart_proyect2:hover{
+  color: red;
+}
+
+.grid_proyec_2_contenido_titulo{
+  color: white;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.grid_proyec_2_contenido_titulo h1,
+.grid_proyec_2_contenido_titulo p {
+  margin-bottom: 0;
+}
+
+
+/* FIN DE CONTENIDO PROYECTOS P2*/
+
+
+.contenido_proyecto_content{
+  display: flex;
+  justify-content: center;
+}
+
+.contenido_proyecto_content_img_1{
+  border: solid 0.2rem rgb(226, 226, 226); /* 2px */
+  margin-top: 3rem;
+  height: 400px;
+  width: 100%;
+  border-radius: 1rem; /* 10px */
+}
+
+.contenido_proyecto_content_img_1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem; /* 10px */
+}
+
+.contenido_proyecto_content_text {
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+footer{
+  margin-bottom: 1rem; /* 40px */
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0px 2rem; /* 20px */
+}
+
+.nav_conten_a{
+  margin: 0px 1rem 0px 0px; /* 0px 10px 0px 0px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 1rem 0px 1rem; /* 0px 10px 0px 10px */
+  text-decoration: none;
+  color: black;
+  padding: 0.4rem; /* 4px */
+  border-bottom: 0.1rem solid transparent; /* 1px */
+  transition: border-bottom-color 0.3s; /* Transición suave */
+}
+
+.nav_conten_a:hover{
+  color: gray;
+  border-bottom-color: #000; /* Cambia el color de la línea al pasar el ratón */
+}
+
+.nav_conten_a p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem; /* 16px */
+  margin-left: 0.5rem; /* 5px */
+}
+
+.nav_conten_a i{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 2.4rem; /* 24px */
+height: 2.4rem; /* 24px */
+}
+
+.nav_bar{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10rem; /* 18px */
+  padding: 0.6rem 1.6rem; /* 6px 16px */
+  border: solid 0.1rem rgb(100, 100, 100); /* 1px */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* SOBRE MI INICIO*/
+
+.aboutme_contenedor {
+  margin: 4% 1.5rem; /* 4% 15px */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 1rem; /* 10px */
+  grid-row-gap: 1rem; /* 10px */
+}
+
+.aboutme_foto_text {
+  height: 400px;
+  background-image: url('../img/fotos/hombre.avif');
+  background-size: cover;
+  border-radius: 0.8rem; /* 8px */
+  grid-area: 1 / 1 / 6 / 4;
+  padding: 1rem; /* 10px */
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutme_header{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.aboutme_header i {
+  color: green;
+  margin-right: 1rem; /* 10px */
+}
+
+.aboutme_section{
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding: 0px 0px 0px 0.5rem; /* 0px 0px 0px 5px */
+}
+
+.aboutme_section h1 {
+  font-size: 4.2rem; /* 42px */
+  margin-bottom: 0;
+}
+
+.aboutme_section h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.4rem; /* 24px */
+  margin-top: 0;
+  margin-bottom: 1rem; /* 10px */
+}
+
+.aboutme_footer {
+  display: flex;
+  margin-top: 0;
+}
+
+.aboutme_footer button{
+  border: none;
+  border-radius: 2rem; /* 20px */
+  width: 12rem; /* 120px */
+  height: 4rem; /* 40px */
+  margin: 0.2rem; /* 2px */
+}
+
+.aboutme_information {
+  background-color: white;
+  border-radius: 0.8rem; /* 8px */
+  grid-area: 1 / 4 / 3 / 6;
+}
+
+.Content_information {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.Content_information h2 {
+  margin-top: 0;
+}
+
+.Content_information p {
+  margin-top:0px;
+  font-size: 1.4rem; /* 14px */
+  line-height: 1.4;
+}
+
+.aboutme_map {
+  grid-area: 3 / 4 / 6 / 5;
+}
+
+.aboutme_map iframe{
+  width: auto;
+  height: 100%;
+  border-radius: 0.8rem; /* 8px */
+}
+
+.aboutme_animation {
+  border-radius: 0.8rem; /* 8px */
+  grid-area: 3 / 5 / 6 / 6;
+  border: solid rgb(255, 0, 208) 0.1rem; /* 1px */
+}
+
+
+/* CONTENIDO DE INFORMACION SOBRE ESTUDIOS*/
+.Menu-contenido{
+  border: solid 1px rgba(255, 0, 0, 0);
+  margin: 14rem auto; /* 140px */
+}
+
+.select-menu {
+  width: 50%;
+  margin: 1rem auto; /* 10px */
+}
+
+.select-menu .select-btn {
+  display: flex;
+  height: 5.5rem; /* 55px */
+  background: #fff;
+  padding: 2rem; /* 20px */
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  border-radius: 0.8rem; /* 8px */
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
+}
+
+.select-btn i {
+  font-size: 2.5rem; /* 25px */
+  transition: 0.3s;
+}
+
+.select-menu.active .select-btn i {
+  transform: rotate(-180deg);
+}
+
+.select-menu .options {
+  position: relative;
+  padding: 2rem;
+  margin-top: 1rem; /* 10px */
+  border-radius: 0.8rem; /* 8px */
+  background: #fff;
+  box-shadow: 0 0 0.3rem rgba(0,0,0,0.1);
+  display: none;
+}
+
+.select-menu.active .options {
+  display: block;
+}
+
+.options .option {
+  display: flex;
+  height: 5.5rem; /* 55px */
+  cursor: pointer;
+  padding: 0 1.6rem; /* 0 16px */
+  border-radius: 0.8rem; /* 8px */
+  align-items: center;
+  background: #fff;
+}
+
+.options .option:hover {
+  background: #cccccc;
+}
+
+.option i {
+  font-size: 2.5rem; /* 25px */
+  margin-right: 1.2rem; /* 12px */
+}
+
+.option .option-text {
+  font-size: 1.8rem; /* 18px */
+  color: #333;
+}
+
+
+
+
+/* SOBRE MI FINAL*/
+
+
+
+.Contactame{
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+  border:  solid 1px gold;
+  border: solid 0.1rem sandybrown; /* 1px */
+  padding: 2rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 34rem; /* 340px */
+  background: #1794ee;
+  border-radius: 1.6rem; /* 16px */
+}
+
+.input_contact{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contacto_box h2{
+  color: rgb(0, 0, 0);
+  font-size: 2rem; /* 20px */
+}
+
+.input_contact label{
+  color: #283629;
+  font-size: 1.4rem; /* 14px */
+  font-weight: 600;
+  margin-bottom: 0.4rem; /* 4px */
+}
+
+.input_contact input, textarea{
+  padding: 1rem 2.5rem; /* 10px 25px */
+  border-radius: 2.5rem; /* 25px */
+  margin-bottom: 2rem; /* 20px */
+  background-color: white;
+  border: 0.1rem solid wheat; /* 1px */
+  color: gray;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+  color: #ccc;
+}
+
+.form-txt{
+  margin-bottom: 3rem; /* 30px */
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.btn_enviar{
+  height: 5rem; /* 50px */
+  font-size: 1.4rem; /* 14px */
+  color: white;
+  border: 0;
+  border-radius: 2.5rem; /* 25px */
+  background-color: #1794ee;
+  box-shadow: 0 0 2rem rgb(255, 0, 208);
+  cursor: pointer;
+}
+
+.btn_enviar:hover{
+  background-color: #283629;
+}
+
+/* INICIO - TEXT ANIMATION*/
+
+.nav_presntacion{
+  margin-top: 30rem;
+  margin-bottom: 0; /* Eliminar el margen inferior */
+  display: flex;
+  margin-left: 30%;
+  color: rgb(240, 240, 240);
+}
+
+.nav_presntacion p{
+  font-size: 4rem;
+}
+
+.nav_presntacion i{
+  color: #CD921E;
+  margin-right: 2rem;
+  font-size: 4rem;
+}
+
+/* INICIO - TEXT ANIMATION*/
+
+.container_textanimation {
+  display: flex;
+  margin: 30%;
+  margin-top: 0; /* Eliminar el margen superior */
+}
+
+
+.word {
+  position: absolute;
+  font-size: 10rem;
+  opacity: 0;
+}
+
+
+.letter {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+
+
+
+/* FIN TEXT ANIMATION*/
+
+
+
+
+@media (max-width: 480px){
+    /* Celulares*/
+
+/* INICIO DE HOME */
+
+.nav_presntacion{
+  margin-top: 30rem;
+  margin-bottom: 0; /* Eliminar el margen inferior */
+  display: flex;
+  margin-left: 10%;
+  color: rgb(240, 240, 240);
+}
+
+
+
+.nav_presntacion p{
+  font-size: 2rem;
+}
+
+.container_textanimation {
+  display: flex;
+  margin: 10%;
+  margin-top: 0; /* Eliminar el margen superior */
+}
+
+
+.word {
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0;
+}
+
+
+
+/*FIN DE HOME*/
+
+    /* INICIO NAV FOOTER*/
+footer{
+margin-bottom: 1rem;
+}
+
+.nav_conten_a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0.2rem 0px 1rem; /* 0px 10px 0px 10px */
+  text-decoration: none;
+  color: black;
+  padding: 0.4rem; /* 4px */
+  border-bottom: 0.1rem solid transparent; /* 1px */
+  transition: border-bottom-color 0.3s; /* Transición suave */
+}
+
+.nav_conten_a:hover{
+  color: gray;
+  border-bottom-color: #000; /* Cambia el color de la línea al pasar el ratón */
+}
+
+.nav_conten_a p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem; /* 16px */
+  margin-left: 0.5rem; /* 5px */
+}
+
+.nav_conten_a i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.4rem; /* 24px */
+  height: 1.4rem; /* 24px */
+}
+
+.nav_bar{
+  width: 380px;
+  border-radius: 4rem; /* 18px */
+  padding: 0.6rem 1.6rem; /* 6px 16px */
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+    /* FIN NAV FOOTER*/
+
+    /* INICIO NAV HEADER SWICH*/
+
+.switch-container .button {
+  border: 0.02rem solid rgb(186, 186, 186); /* 0.2px */
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 4rem; /* 40px */
+  height: 2.2rem; /* 22px */
+  border-radius: 3rem; /* 30px */
+  cursor: pointer;
+  position: relative;
+}
+
+.switch-container .button::before {
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+  width: 1.8rem; /* 18px */
+  height: 1.8rem; /* 18px */
+  border-radius: 3rem; /* 30px */
+  margin: 0.2rem; /* 2px */
+  transition: 0.2s;
+}
+
+.switch-container input:checked + .button::before {
+  transform: translateX(1.6rem); /* 16px */
+}
+
+    /* FINAL NAV HEADER SWICH*/
+
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      border: 0.1rem solid #ccc; /* 1px */
+      border-radius: 0.5rem; /* 5px */
+      box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+      display: none;
+      margin-top: 0.5rem;
+    }
+
+    /* INICIO PROYECTOS 1 - PROYECTOS CONTENEDOR*/
+
+    .proyectos_contedor {  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: 1fr; 
+    }
+    
+    .colum1,
+    .colum2,
+    .colum3 {
+      grid-area: auto; 
+    }
+
+
+    /* FIN  PROYECTOS 1 - PROYECTOS CONTENEDOR*/
+
+
+
+    /* INICIO  PROYECTOS 2 - PROYECTOS CONTENEDOR*/
+
+.grid_proyec_2 {
+width: 90%;
+grid-template-columns: 1fr; 
+grid-template-rows: auto; 
+padding: 0;
+margin: 1rem auto; /* Centra horizontalmente */
+min-height: auto; 
+}
+
+.informacion_box {
+width: 24px;
+position: static;
+margin-left: 10px;
+}
+
+.informacion_box a:hover {
+color: white;
+}
+
+.informacion_box p {
+display: none; 
+
+}
+/* FIN DE PROYECTOS 2*/
+
+
+    /* INICIO ABOUT ME- PROYECTOS CONTENEDOR*/
+    
+    .aboutme_contenedor {
+      grid-template-columns: 1fr 2fr; /* La segunda columna tiene el doble de ancho que la primera */
+      grid-template-rows: auto auto auto; /* Tres filas */
+      grid-row-gap: 1rem; /* Ajustar el espacio entre filas */
+    }
+    
+    .aboutme_foto_text {
+      grid-area: 1 / 1 / 2 / 3; /* Ocupa la primera fila y ambas columnas */
+    }
+    
+    .aboutme_information {
+      grid-area: 2 / 1 / 3 / 3; /* Ocupa la segunda fila y ambas columnas */
+    }
+    
+    .aboutme_map {
+      grid-area: 3 / 1 / 4 / 2; /* Tercera fila, primera columna */
+    }
+    
+    .aboutme_animation {
+      width: auto;
+      height: 100%; 
+      background-image: url('../img/fotos/hombre.avif');
+      background-size: cover; /* La imagen se ajustará al contenedor sin distorsionar su aspecto */
+      grid-area: 3 / 2 / 4 / 3; /* Tercera fila, segunda columna */
+    }
+    
+    .Menu-contenido{
+      margin: 10rem auto; /* 140px */
+    }
+    
+    .select-menu {
+      width: 90%;
+      margin: 1rem auto; /* 10px */
+    }
+
+
+
+    .aboutme_section{
+      display: flex;
+      flex-direction: column;
+      margin-top: auto;
+      padding: 100px 0px 0px 0.5rem; /* 0px 0px 0px 5px */
+    }
+    
+    .aboutme_section h1 {
+      font-size: 2.2rem; /* 42px */
+      margin-bottom: 0;
+    }
+    
+    .aboutme_section h4 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 2rem; /* 24px */
+      margin-top: 0;
+      margin-bottom: 1rem; /* 10px */
+    }
+    
+    /* FIN  ABOUT ME*/
+
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait)  {
+
+
+/* INICIO DE HOME */
+
+.nav_presntacion{
+  margin-top: 30rem;
+  margin-bottom: 0; /* Eliminar el margen inferior */
+  display: flex;
+  margin-left: 15%;
+  color: rgb(240, 240, 240);
+}
+
+.nav_presntacion p{
+  font-size: 3rem;
+}
+
+.container_textanimation {
+  display: flex;
+  margin: 15%;
+  margin-top: 0; /* Eliminar el margen superior */
+}
+
+
+.word {
+  position: absolute;
+  font-size: 4rem;
+  opacity: 0;
+}
+
+
+
+/*FIN DE HOME*/
+
+/* INICIO NAV FOOTER*/
+
+
+.nav_conten_a{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0px 0.2rem 0px 1rem; /* 0px 10px 0px 10px */
+text-decoration: none;
+color: black;
+padding: 0.4rem; /* 4px */
+border-bottom: 0.1rem solid transparent; /* 1px */
+transition: border-bottom-color 0.3s; /* Transición suave */
+}
+
+.nav_conten_a p{
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.3rem; /* 16px */
+margin-left: 0.5rem; /* 5px */
+}
+
+.nav_bar{
+width: 430px;
+border-radius: 4rem; /* 18px */
+padding: 0.6rem 1.6rem; /* 6px 16px */
+display: flex;
+justify-content: space-between;
+}
+
+/* FIN NAV FOOTER*/
+
+/*  PROYECTOS 1*/
+.proyectos_contedor {
+grid-template-columns: repeat(2, 1fr); /* Cambiar a 2 columnas */
+}
+
+.colum1 {
+grid-area: 1 / 1 / 2 / 2;
+}
+
+.colum2 {
+grid-area: 1 / 2 / 2 / 3;
+}
+
+.colum3 {
+grid-area: 2 / 1 / 3 / 2; /* Posicionar la tercera columna abajo de la primera columna */
+}
+
+
+
+
+.contenedor_info{
+  margin-top: 1rem; /* 10px */
+  border-radius: 1rem; /* 10px */
+  padding: 1rem; /* 10px */
+  background-color: white;
+  height: auto;
+}
+
+
+
+.info_bar p{
+  font-size: 15px;
+  color: #000;
+}
+
+
+.p_elemento{
+  display: none;
+  margin-left: 0.5rem; /* 5px */
+  background: grey;
+  padding: 0.2rem; /* 2px */
+  border-radius: 0.4rem; /* 4px */
+  color: white;
+}
+
+
+
+/* INICIO  PROYECTOS 2 - PROYECTOS CONTENEDOR*/
+.grid_proyec_2 {
+width: 90%;
+grid-template-columns: 1fr; 
+grid-template-rows: auto; 
+padding: 0;
+margin: 1rem auto; /* Centra horizontalmente */
+min-height: auto; 
+}
+
+.informacion_box {
+width: 24px;
+position: static;
+margin-left: 10px;
+}
+
+.informacion_box a:hover {
+color: white;
+}
+
+.informacion_box p {
+display: none; 
+
+}
+/* FIN DE PROYECTOS 2*/
+
+
+
+
+/*Inicio de About me*/
+.aboutme_contenedor {
+grid-template-columns: 1fr 2fr; /* La segunda columna tiene el doble de ancho que la primera */
+grid-template-rows: auto auto auto; /* Tres filas */
+grid-row-gap: 1rem; /* Ajustar el espacio entre filas */
+}
+
+.aboutme_foto_text {
+grid-area: 1 / 1 / 2 / 3; /* Ocupa la primera fila y ambas columnas */
+}
+
+.aboutme_information {
+grid-area: 2 / 1 / 3 / 3; /* Ocupa la segunda fila y ambas columnas */
+}
+
+.aboutme_map {
+grid-area: 3 / 1 / 4 / 2; /* Tercera fila, primera columna */
+}
+
+.aboutme_animation {
+width: auto;
+height: 100%; 
+background-image: url('../img/fotos/hombre.avif');
+background-size: cover; /* La imagen se ajustará al contenedor sin distorsionar su aspecto */
+grid-area: 3 / 2 / 4 / 3; /* Tercera fila, segunda columna */
+}
+
+
+.Menu-contenido{
+  margin: 10rem auto; /* 140px */
+}
+
+.select-menu {
+width: 90%;
+margin: 1rem auto; /* 10px */
+}
+
+
+.aboutme_section{
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding: 100px 0px 0px 0.5rem; /* 0px 0px 0px 5px */
+}
+
+.aboutme_section h1 {
+  font-size: 2.2rem; /* 42px */
+  margin-bottom: 0;
+}
+
+.aboutme_section h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem; /* 24px */
+  margin-top: 0;
+  margin-bottom: 1rem; /* 10px */
+}
+/* FIN ABOUT ME*/
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+  /* INICIO DE HOME */
+
+.nav_presntacion{
+  margin-top: 30rem;
+  margin-bottom: 0; /* Eliminar el margen inferior */
+  display: flex;
+  margin-left: 10%;
+  color: rgb(240, 240, 240);
+}
+
+.nav_presntacion p{
+  font-size: 4rem;
+}
+
+.container_textanimation {
+  display: flex;
+  margin: 10%;
+  margin-top: 0; /* Eliminar el margen superior */
+}
+
+
+.word {
+  position: absolute;
+  font-size: 5.5rem;
+  opacity: 0;
+}
+
+
+
+/*FIN DE HOME*/
+
+  /* INICIO NAV BAR*/
+  .nav_conten_a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0.2rem 0px 1rem; /* 0px 10px 0px 10px */
+    text-decoration: none;
+    color: black;
+    padding: 0.4rem; /* 4px */
+    border-bottom: 0.1rem solid transparent; /* 1px */
+    transition: border-bottom-color 0.3s; /* Transición suave */
+    }
+    
+    .nav_conten_a p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem; /* 16px */
+    margin-left: 0.5rem; /* 5px */
+    }
+    
+    .nav_bar{
+    width: 430px;
+    border-radius: 4rem; /* 18px */
+    padding: 0.6rem 1.6rem; /* 6px 16px */
+    display: flex;
+    justify-content: space-between;
+    }
+
+      /* FIN NAV BAR*/
+
+      
+/* INICIO  PROYECTOS 2 - PROYECTOS CONTENEDOR*/
+      .contenedor_info{
+        border-radius: 1rem; /* 10px */
+        padding: 1rem; /* 10px */
+        background-color: white;
+        height: auto;
+      }
+      
+      
+      
+      .info_bar p{
+        font-size: 13px;
+        color: #000;
+      }
+      
+      
+      .p_elemento{
+        margin-left: 0.2rem; /* 5px */
+        background: grey;
+        padding: 0.2rem; /* 2px */
+        border-radius: 0.4rem; /* 4px */
+        color: white;
+      }
+
+      .info_icon i{
+        padding: 0.2rem; /* 6px */
+        color: gray;
+      }
+
+/* FIN  PROYECTOS 1 - PROYECTOS CONTENEDOR*/
+
+
+/* INICIO de PROYECTOS PESTAÑA 2*/
+
+.grid_proyec_2 {
+  width: 90%;
+  margin: 0 auto; /* Centra horizontalmente */
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+}
+
+
+/* FIN DE CONTENIDO PROYECTOS P2*/
+  
+
+
+.aboutme_section{
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding: 100px 0px 0px 0.5rem; /* 0px 0px 0px 5px */
+}
+
+.aboutme_section h1 {
+  font-size: 2.2rem; /* 42px */
+  margin-bottom: 0;
+}
+
+.aboutme_section h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem; /* 24px */
+  margin-top: 0;
+  margin-bottom: 1rem; /* 10px */
+}
+
+
+.select-menu {
+  width: 90%;
+  margin: 1rem auto; /* 10px */
+  }
+
+}
+
+
+.aboutme_footer button{
+  border: none;
+  border-radius: 2rem; /* 20px */
+  width: 12rem; /* 120px */
+  height: 4rem; /* 40px */
+  margin: 0.2rem; /* 2px */
+  
+}
+
+/* FIN ABOUT ME*/
+
+
+
+
+
+=======
 html {
   font-size: 62.5%; /* Equivale a 10px */
 }
@@ -1414,3 +2756,5 @@ margin: 1rem auto; /* 10px */
 
 
 
+
+>>>>>>> abf714c5c26bbe80151f216c9de1e23ee2a761a9
