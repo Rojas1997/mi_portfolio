@@ -32,18 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    const tabMenu = document.querySelector('.tab-menu');
-
-    tabMenu.addEventListener('click', (event) => {
-        const menuItem = event.target.closest('.tab-menu__item');
-        
-        if (!menuItem) return;
-        
-        const currentSelectedItem = tabMenu.querySelector('.tab-menu__item.tab-menu_active');
-        currentSelectedItem.classList.remove('tab-menu_active');
-        
-        menuItem.classList.add('tab-menu_active');
-    });
 });
 
 
@@ -56,14 +44,6 @@ optionMenus.forEach(optionMenu => {
 
     selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));       
 
-    options.forEach(option =>{
-        option.addEventListener("click", ()=>{
-            let selectedOption = option.querySelector(".option-text").innerText;
-            sBtn_text.innerText = selectedOption;
-
-            optionMenu.classList.remove("active");
-        });
-    });
 });
 
 
@@ -121,3 +101,34 @@ wordArray.push(letters);
 
 changeWord();
 setInterval(changeWord, 4000);
+
+/*  Option sub menu */
+
+function toggleSubMenu(optionHed) {
+    var subMenu = optionHed.nextElementSibling;
+    subMenu.classList.toggle('show');
+}
+
+
+/**/
+function showImage(imgUrl) {
+    // Obtener el modal
+    var modal = document.getElementById('modal');
+
+    // Obtener el elemento <img> dentro del modal
+    var modalImg = document.getElementById('modal-image');
+
+    // Asignar la URL de la imagen al src del elemento <img> del modal
+    modalImg.src = imgUrl;
+
+    // Mostrar el modal
+    modal.style.display = 'block';
+}
+
+function closeModal() {
+    // Obtener el modal
+    var modal = document.getElementById('modal');
+
+    // Ocultar el modal cuando se hace clic en cualquier lugar dentro de él
+    modal.style.display = 'none';
+}

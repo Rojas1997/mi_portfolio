@@ -497,18 +497,27 @@ height: 2.4rem; /* 24px */
 }
 
 
-/* CONTENIDO DE INFORMACION SOBRE ESTUDIOS*/
-.Menu-contenido{
-  border: solid 1px rgba(255, 0, 0, 0);
-  margin: 14rem auto; /* 140px */
+/*  INICIO ESTUDIOS */
+.menu-contenido-padre{
+  margin: 10rem;
 }
 
-.select-menu {
+.Menu-contenido{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+.select-menu{
   width: 50%;
   margin: 1rem auto; /* 10px */
+  border-radius: 1rem;
+  background-color: #ccc;
+  border: solid 1px darkgoldenrod;
 }
 
-.select-menu .select-btn {
+.select-btn {
   display: flex;
   height: 5.5rem; /* 55px */
   background: #fff;
@@ -522,6 +531,7 @@ height: 2.4rem; /* 24px */
   box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
 }
 
+
 .select-btn i {
   font-size: 2.5rem; /* 25px */
   transition: 0.3s;
@@ -530,22 +540,51 @@ height: 2.4rem; /* 24px */
 .select-menu.active .select-btn i {
   transform: rotate(-180deg);
 }
-
-.select-menu .options {
-  position: relative;
+/* Menu desplegable opciones */
+.option-hed{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   padding: 2rem;
+}
+.option-hed:hover{
+
+  border-radius: 0.8rem;
+  background-color: gray;
+}
+
+.option-hed span{
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 1.2rem;
+}
+.options-sub {
+  margin: 0;
+  border: 0;
+}
+
+.options-sub.show {
+  display: block; /* Muestra el submenu cuando tiene la clase "show" */
+}
+
+
+
+.options {
+  position: relative;
   margin-top: 1rem; /* 10px */
-  border-radius: 0.8rem; /* 8px */
+
   background: #fff;
   box-shadow: 0 0 0.3rem rgba(0,0,0,0.1);
   display: none;
 }
 
-.select-menu.active .options {
+.active .options {
   display: block;
 }
 
-.options .option {
+
+
+.option, .option-sub {
   display: flex;
   height: 5.5rem; /* 55px */
   cursor: pointer;
@@ -555,22 +594,55 @@ height: 2.4rem; /* 24px */
   background: #fff;
 }
 
-.options .option:hover {
+
+.option, .option-sub:hover {
   background: #cccccc;
 }
 
-.option i {
+.options-sub {
+  display: none;
+}
+
+.options-sub.show {
+  display: block;
+}
+
+.options i {
   font-size: 2.5rem; /* 25px */
-  margin-right: 1.2rem; /* 12px */
+  transition: 0.3s;
 }
 
-.option .option-text {
-  font-size: 1.8rem; /* 18px */
-  color: #333;
+.options.active .options i {
+  transform: rotate(-180deg);
+}
+/*Fin menu  estudios*/
+
+
+/* Estilos para el modal */
+.modal {
+  display: none; /* Ocultar modal por defecto */
+  position: fixed; /* Posición fija */
+  z-index: 1000; /* Colocar el modal encima del resto del contenido */
+  left: 0;
+  top: 0;
+  width: 100%; /* Tamaño completo */
+  height: 100%; /* Tamaño completo */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
+  overflow: auto; /* Agregar desplazamiento si es necesario */
 }
 
-
-
+/* Estilo para la imagen en el modal */
+.modal-content {
+  display: block;
+  margin: auto; /* Centrar la imagen horizontalmente */
+  max-width: 80%; /* Ancho máximo */
+  max-height: 80%; /* Altura máxima */
+  position: absolute; /* Posición absoluta */
+  top: 50%; /* Centrar verticalmente */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translate(-50%, -50%); /* Centrar en la pantalla */
+  border-radius: 5px;
+}
 
 /* SOBRE MI FINAL*/
 
