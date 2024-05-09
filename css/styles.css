@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   font-size: 62.5%; /* Equivale a 10px */
@@ -616,8 +620,8 @@ height: 2.4rem; /* 24px */
 .options.active .options i {
   transform: rotate(-180deg);
 }
+/*Fin menu  estudios*/
 
-/* FIN MENU ESTUDI*/
 
 /* Estilos para el modal */
 .modal {
@@ -659,8 +663,6 @@ height: 2.4rem; /* 24px */
 form{
   margin-bottom: 10rem;
   margin-top: 5rem;
-  border:  solid 1px gold;
-  border: solid 0.1rem sandybrown; /* 1px */
   padding: 2rem;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -727,9 +729,9 @@ input::placeholder, textarea::placeholder{
 
 .nav_presntacion{
   margin-top: 30rem;
-  margin-bottom: 0; /* Eliminar el margen inferior */
   display: flex;
-  margin-left: 30%;
+  justify-content: center;
+  align-items: center;
   color: rgb(240, 240, 240);
 }
 
@@ -745,16 +747,13 @@ input::placeholder, textarea::placeholder{
 
 /* INICIO - TEXT ANIMATION*/
 
-.container_textanimation {
-  display: flex;
-  margin: 30%;
-  margin-top: 0; /* Eliminar el margen superior */
+.container_textanimation{
+margin-left: 25%;
 }
-
 
 .word {
   position: absolute;
-  font-size: 10rem;
+  font-size: 15rem;
   opacity: 0;
 }
 
@@ -888,9 +887,10 @@ margin-bottom: 1rem;
   padding: 0.6rem 1.6rem; /* 6px 16px */
   display: flex;
   justify-content: space-between;
+
 }
 
-
+;
 
     /* FIN NAV FOOTER*/
 
@@ -1413,4 +1413,9 @@ margin: 1rem auto; /* 10px */
 }
 
 /* FIN ABOUT ME*/
+
+
+
+
+
 
