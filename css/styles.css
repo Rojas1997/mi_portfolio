@@ -515,9 +515,6 @@ height: 2.4rem; /* 24px */
 .select-menu{
   width: 50%;
   margin: 1rem auto; /* 10px */
-  border-radius: 1rem;
-  background-color: #ccc;
-  border: solid 1px darkgoldenrod;
 }
 
 .select-btn {
@@ -544,14 +541,18 @@ height: 2.4rem; /* 24px */
   transform: rotate(-180deg);
 }
 /* Menu desplegable opciones */
+
+.options{
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
 .option-hed{
   cursor: pointer;
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 .option-hed:hover{
-
   border-radius: 0.8rem;
   background-color: gray;
 }
@@ -561,10 +562,7 @@ height: 2.4rem; /* 24px */
   font-weight: 400;
   margin-left: 1.2rem;
 }
-.options-sub {
-  margin: 0;
-  border: 0;
-}
+
 
 .options-sub.show {
   display: block; /* Muestra el submenu cuando tiene la clase "show" */
@@ -618,8 +616,8 @@ height: 2.4rem; /* 24px */
 .options.active .options i {
   transform: rotate(-180deg);
 }
-/*dddddddddddddddddddddddd*/
 
+/* FIN MENU ESTUDI*/
 
 /* Estilos para el modal */
 .modal {
