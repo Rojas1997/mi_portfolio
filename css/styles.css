@@ -62,7 +62,6 @@ align-items: center;
 }
 
 .dropdown-menu {
-  border: solid 1px red;
   position: absolute;
   list-style: none;
   margin-top: 5px;
@@ -896,7 +895,6 @@ margin-bottom: 1rem;
 }
 
 .nav_bar{
-  border: solid 1px red;
   width: 315px;
   border-radius: 4rem; /* 18px */
   display: flex;
