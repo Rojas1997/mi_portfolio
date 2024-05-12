@@ -11,91 +11,31 @@ body, input, button, select, textarea {
   font-size: 1.6rem; /* 16px */
 }
 
+/* DARK MOOD*/
 body {
+  color: var(--text-color);
   font-family: 'Poppins', sans-serif;
-  background-color: #1C2431;
-  min-height: 100vh;
+  background-color: var(--bg-color);
+  transition: .5s background-color, color .5s;
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #111;
+  --text-color: #fff;
+
+  --color-switcher: #3B95FF;
+  --color-active: #fff;
+  --border-option: none;
 }
 
 
-.thme{
-background-color: #000;
-color: white; 
-}
+:root[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #111;
 
-
-.header-content {
-width: auto;
-margin-right: 4rem;
-margin-top: 1rem;
-display: flex;
-Justify-content:flex-end;
-align-items: center;
-}
-
-.language-dropdown {
-  position: relative;
-  margin-right: 2rem; /* 10px */
-}
-
-.dropdown-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.dropdown-toggle:hover {
-  text-decoration: underline;
-}
-
-.language-icon {
-  display: flex;
-  align-items: center;
-}
-
-.language-icon img {
-  width: 2rem; /* 20px */
-  height: auto;
-  margin-right: 0.5rem; /* 5px */
-}
-
-.dropdown-menu {
-  position: absolute;
-  list-style: none;
-  margin-top: 5px;
-  background-color: #fff;
-  border-radius: 0.5rem; /* 5px */
-  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
-  display: none;
-}
-
-.language-dropdown.open .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu li {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem; /* 5px 10px */
-}
-
-.dropdown-menu li a {
-  text-decoration: none;
-  color: #333;
-  display: flex;
-  align-items: center;
-}
-
-.dropdown-menu li a:hover {
-  background-color: #f0f0f0;
-}
-
-.dropdown-menu img {
-  width: 2rem; /* 20px */
-  height: auto;
-  margin-right: 0.5rem; /* 5px */
+  --color-switcher: #c4c4c4;
+  --color-active: #c1c1c1;
+  --border-option: 20px solid #fff;
 }
 
 .switch-container {
@@ -108,8 +48,8 @@ align-items: center;
 }
 
 .switch-container .button {
-  border: 0.02rem solid rgb(186, 186, 186); /* 0.2px */
-  background-color: rgba(255, 255, 255, 0.7);
+  border: 0.02rem solid var(--border-option); /* 0.2px */
+  background-color: var(--bg-color-active);
   width: 5.2rem; /* 52px */
   height: 2.8rem; /* 28px */
   border-radius: 6rem; /* 60px */
@@ -120,7 +60,7 @@ align-items: center;
 .switch-container .button::before {
   position: absolute;
   content: '';
-  background-color: #ffffff;
+  background-color: var(--color-active);
   width: 2.4rem; /* 24px */
   height: 2.4rem; /* 24px */
   border-radius: 6rem; /* 60px */
@@ -135,6 +75,7 @@ align-items: center;
 .switch-container input:checked + .button::before {
   transform: translateX(2.4rem); /* 24px */
 }
+
 
 /* Contenedor de proyectos */
 

@@ -132,3 +132,19 @@ function closeModal() {
     // Ocultar el modal cuando se hace clic en cualquier lugar dentro de él
     modal.style.display = 'none';
 }
+
+
+/*  dark mode */
+
+const switcherTheme = document.querySelector('#check');
+const root = document.documentElement;
+
+switcherTheme.addEventListener('click', toggleTheme);
+
+function toggleTheme() {
+    const setTheme = switcherTheme.checked ? 'dark' : 'light';
+
+    root.setAttribute('data-theme', setTheme);
+    localStorage.setItem('theme', setTheme);
+}
+

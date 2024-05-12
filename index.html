@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZIKO</title>
-    <link rel="stylesheet" href="/mi_portfolio/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e35bf355b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script>
+        const storageTheme = localStorage.getItem('theme');
+        const systemColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        
+        const newTheme = storageTheme ?? systemColorScheme;
+
+        document.documentElement.setAttribute('data-theme', newTheme);
+    </script>
 </head>
 <body>
     
@@ -19,23 +27,22 @@
         <div class="header-content">
             <div class="language-switch-container">
                 <div class="language-dropdown">
+                    <!-- Contenido del menú de idiomas aquí -->
                     <button class="dropdown-toggle">
                         <span id="selected-language" class="language-icon">
-                            <img id="selected-flag" class="language-flag" src="./img/icon-Idioma/espana.png" alt="ES"> ES
-                        </span>
+                            <img id="selected-flag" class="language-flag" src="/img/icon-idioma/espana.png" alt="es"> ES
+                        </span> 
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="#" onclick="changeLanguage('ES', './img/icon-Idioma/espana.png')"><img
-                                    src="./img/icon-Idioma/espana.png" alt="ES"> ES</a></li>
-                        <li><a href="#" onclick="changeLanguage('GR', './img/icon-Idioma/alemania.png')"><img
-                                    src="./img/icon-Idioma/alemania.png" alt="GR"> GR</a></li>
-                        <li><a href="#" onclick="changeLanguage('EN', './img/icon-Idioma/reino-unido.png')"><img
-                                    src="./img/icon-Idioma/reino-unido.png" alt="EN"> EN</a></li>
-                    </ul>
+                        <li><a href="#" onclick="changeLanguage('es', '/img/icon-idioma/espana.png')"><img src="/img/icon-idioma/espana.png" alt="es"> ES</a></li>
+                        <li><a href="#" onclick="changeLanguage('gr', '/img/icon-idioma/alemania.png')"><img src="/img/icon-idioma/alemania.png" alt="gr"> GR</a></li>
+                        <li><a href="#" onclick="changeLanguage('en', '/img/icon-idioma/reino-unido.png')"><img src="/img/icon-idioma/reino-unido.png" alt="en"> EN</a></li>
+                    </ul>                
                 </div>
             </div>
+            <!-- Switch aquí -->
             <div class="switch-container">
-                <input type="checkbox" id="check">
+                <input type="checkbox" id="check" class="main_check">
                 <label for="check" class="button"></label>
             </div>
         </div>
