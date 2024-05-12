@@ -156,6 +156,8 @@ align-items: center;
 }
 
 
+
+
 /* Contenedor de proyectos */
 
 .proyectos_contedor {
@@ -444,7 +446,6 @@ height: 2.4rem; /* 24px */
 }
 
 .aboutme_header i {
-  color: green;
   margin-right: 1rem; /* 10px */
 }
 
@@ -760,7 +761,7 @@ input::placeholder, textarea::placeholder{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(240, 240, 240);
+  color: var(--text-color);
 }
 
 .nav_presntacion p{
@@ -1521,10 +1522,7 @@ grid-area: 2 / 1 / 3 / 3; /* Ocupa la segunda fila y ambas columnas */
 
 }
 
-
-
-
-
+/* Tema claro */
 
 
 
