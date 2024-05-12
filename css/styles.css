@@ -77,6 +77,85 @@ body {
 }
 
 
+
+/* FIN DARK MOOD*/
+
+.header-content {
+width: auto;
+margin-right: 4rem;
+margin-top: 1rem;
+display: flex;
+Justify-content:flex-end;
+align-items: center;
+}
+
+.language-dropdown {
+  position: relative;
+  margin-right: 2rem; /* 10px */
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-toggle:hover {
+  text-decoration: underline;
+}
+
+.language-icon {
+
+  display: flex;
+  align-items: center;
+}
+
+.language-icon img {
+  width: 2rem; /* 20px */
+  height: auto;
+  margin-right: 0.5rem; /* 5px */
+}
+
+.dropdown-menu {
+  position: absolute;
+  list-style: none;
+  margin-top: 5px;
+  background-color: var(--bg-color);
+  border-radius: 0.5rem; /* 5px */
+  box-shadow: 0 0.1px 0.4rem var(--text-color);
+  display: none;
+}
+
+.language-dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem; /* 5px 10px */
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu img {
+  width: 2rem; /* 20px */
+  height: auto;
+  margin-right: 0.5rem; /* 5px */
+}
+
+
 /* Contenedor de proyectos */
 
 .proyectos_contedor {
