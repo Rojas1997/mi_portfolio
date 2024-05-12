@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e35bf355b4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script>
         const storageTheme = localStorage.getItem('theme');
         const systemColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
@@ -30,13 +30,13 @@
                     <!-- Contenido del menú de idiomas aquí -->
                     <button class="dropdown-toggle">
                         <span id="selected-language" class="language-icon">
-                            <img id="selected-flag" class="language-flag" src="/img/icon-idioma/espana.png" alt="es"> ES
+                            <img id="selected-flag" class="language-flag" src="./img/icon-idioma/espana.png" alt="es"> ES
                         </span> 
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="#" onclick="changeLanguage('es', '/img/icon-idioma/espana.png')"><img src="/img/icon-idioma/espana.png" alt="es"> ES</a></li>
-                        <li><a href="#" onclick="changeLanguage('gr', '/img/icon-idioma/alemania.png')"><img src="/img/icon-idioma/alemania.png" alt="gr"> GR</a></li>
-                        <li><a href="#" onclick="changeLanguage('en', '/img/icon-idioma/reino-unido.png')"><img src="/img/icon-idioma/reino-unido.png" alt="en"> EN</a></li>
+                        <li><a href="#" onclick="changeLanguage('es', './img/icon-idioma/espana.png')"><img src="./img/icon-idioma/espana.png" alt="es"> ES</a></li>
+                        <li><a href="#" onclick="changeLanguage('gr', './img/icon-idioma/alemania.png')"><img src="./img/icon-idioma/alemania.png" alt="gr"> GR</a></li>
+                        <li><a href="#" onclick="changeLanguage('en', './img/icon-idioma/reino-unido.png')"><img src="./img/icon-idioma/reino-unido.png" alt="en"> EN</a></li>
                     </ul>                
                 </div>
             </div>
