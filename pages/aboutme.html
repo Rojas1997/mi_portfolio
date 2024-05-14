@@ -11,34 +11,61 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e35bf355b4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
-<body class="body-padre">
-<!-- Sección del encabezado -->
-
+<body>
+    
     <!-- Inicio de header -->
     <header>
         <div class="header-content">
-            <div class="language-switch-container">
-                <div class="language-dropdown">
-                    <button class="dropdown-toggle">
-                        <span id="selected-language" class="language-icon">
-                            <img id="selected-flag" class="language-flag" src="../img/icon-Idioma/espana.png" alt="ES"> ES
-                        </span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" onclick="changeLanguage('ES', '../img/icon-Idioma/espana.png')"><img
-                                    src="../img/icon-Idioma/espana.png" alt="ES"> ES</a></li>
-                        <li><a href="#" onclick="changeLanguage('GR', '../img/icon-Idioma/alemania.png')"><img
-                                    src="../img/icon-Idioma/alemania.png" alt="GR"> GR</a></li>
-                        <li><a href="#" onclick="changeLanguage('EN', '../img/icon-Idioma/reino-unido.png')"><img
-                                    src="../img/icon-Idioma/reino-unido.png" alt="EN"> EN</a></li>
-                    </ul>
-                </div>
+            <div class="drop-down-body">
+                <!-- SELECION DE IDIOMAS MENU HEADER-->
+                <a href="#" class="drop-down-btn">
+                    <img src="../img/icon-Idioma/es.png" id="btn-img" alt="es" class="lenguage-img" >
+                    <h3 id="btn-title" class="lenguage-title">
+                        ES
+                    </h3>
+                </a>
+                <ul class="lenguage-menu">
+                    <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
+                    <li class="lenaguage-item" data-lang="en">
+                        <img src="../img/icon-Idioma/en.png" alt="en" class="lenguage-img" >
+                        <h3 class="lenguage-title">
+                            EN
+                        </h3>
+                    </li>
+                    <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
+                    <li class="lenaguage-item" data-lang="it">
+                        <img src="../img/icon-Idioma/it.png" alt="it" class="lenguage-img" >
+                        <h3 class="lenguage-title">
+                            IT
+                        </h3>
+                    </li>
+                                        <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
+                    <li class="lenaguage-item" data-lang="du">
+                        <img src="../img/icon-Idioma/du.png" alt="du" class="lenguage-img" >
+                        <h3 class="lenguage-title">
+                            DU
+                        </h3>
+                    </li>
+                                        <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
+                    <li class="lenaguage-item" data-lang="es">
+                        <img src="../img/icon-Idioma/es.png" alt="es" class="lenguage-img" >
+                        <h3 class="lenguage-title">
+                            ES
+                        </h3>
+                    </li>
+                </ul>
             </div>
-            <div class="switch-container">
-                <input type="checkbox" id="check">
-                <label for="check" class="button"></label>
-            </div>
+
+            <!-- Switch aquí -->
+            <label class="button-mod">
+                <input type="checkbox">
+                <ion-icon name="sunny" class="sun"></ion-icon>
+                <ion-icon name="moon" class="moon"></ion-icon>
+                <span class="toggle"></span>
+                <span class="animatedBg"></span>
+            </label>
         </div>
     </header>
     <!-- Fin de header -->
@@ -71,7 +98,6 @@
                         aliquam laudantium quas, eaque nam unde quibusdam.</p>
                 </div>
             </div>
-
             <div class="aboutme_map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.45340273721!2d-58.51569885718407!3d-34.61565476971351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1713821312520!5m2!1ses-419!2sar"
@@ -79,7 +105,7 @@
                 </iframe>
             </div>
             <div class="aboutme_animation">
-                <img src="../img/gif/1.gif" alt="">
+                <img src="/img/gif/1.gif" alt="">
             </div>
         </section>
 
@@ -99,9 +125,9 @@
                                     </div>
                                     <!-- Nuevo submenú -->
                                     <ul class="options-sub">
-                                        <li class="option-sub" onclick="showImage('../img/certificado/coder-diseño-grafico.png')">Photoshop e Illustrator</li>
-                                        <li class="option-sub" onclick="showImage('../img/certificado/coder-diseño-ux-ui.png')">Diseño UX/UI</li>
-                                        <li class="option-sub" onclick="showImage('../img/certificado/coder-diseño-ux-ui-avanzado.png')">Diseño UX/UI Avanzado</li>
+                                        <li class="option-sub" onclick="showImage('/img/certificado/coder-diseño-grafico.png')">Photoshop e Illustrator</li>
+                                        <li class="option-sub" onclick="showImage('/img/certificado/coder-diseño-ux-ui.png')">Diseño UX/UI</li>
+                                        <li class="option-sub" onclick="showImage('/img/certificado/coder-diseño-ux-ui-avanzado.png')">Diseño UX/UI Avanzado</li>
                                     </ul>
                                 </li>
                                 <li class="options">
@@ -111,10 +137,10 @@
                                     </div>
                                     <!-- Nuevo submenú -->
                                     <ul class="options-sub">
-                                        <li class="option-sub" onclick="showImage('../img/certificado/ux-1.png')">Llevar a cabo investigaciones en UX</li>
-                                        <li class="option-sub" onclick="showImage('../img/certificado/ux-2.png')">Crear esquemas de página y prototipos de baja fidelidad</li>
-                                        <li class="option-sub" onclick="showImage('../img/certificado/ux-3.png')">Primeros pasos en el proceso de diseño de UX</li>
-                                        <li class="option-sub" onclick="showImage('../img/certificado/ux-4.png')">Aspectos básicos del diseño de la experiencia del usuario</li>
+                                        <li class="option-sub" onclick="showImage('/img/certificado/ux-1.png')">Llevar a cabo investigaciones en UX</li>
+                                        <li class="option-sub" onclick="showImage('/img/certificado/ux-2.png')">Crear esquemas de página y prototipos de baja fidelidad</li>
+                                        <li class="option-sub" onclick="showImage('/img/certificado/ux-3.png')">Primeros pasos en el proceso de diseño de UX</li>
+                                        <li class="option-sub" onclick="showImage('/img/certificado/ux-4.png')">Aspectos básicos del diseño de la experiencia del usuario</li>
                                     </ul>
                                 </li>
                                 
@@ -125,7 +151,7 @@
                                     </div>
                                     <!-- Nuevo submenú -->
                                     <ul class="options-sub" >
-                                        <li class="option-sub" onclick="showImage('../img/certificado/desarollow-html.png')">Desarrollo Web con HTML</li>
+                                        <li class="option-sub" onclick="showImage('/img/certificado/desarollow-html.png')">Desarrollo Web con HTML</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -177,19 +203,19 @@
     <!-- Inicio de footer -->
     <footer>
         <div class="nav_bar">
-            <a href="../index.html" class="nav_conten_a">
+            <a href="/index.html" class="nav_conten_a">
                 <i class="fa-solid fa-house"></i>
                 <p>Home</p>
             </a>
-            <a href="../pages/proyectos1.html" class="nav_conten_a">
+            <a href="/pages/proyectos1.html" class="nav_conten_a">
                 <i class="fa-brands fa-space-awesome"></i>
                 <p>Proyectos</p>
             </a>
-            <a href="../pages/aboutme.html" class="nav_conten_a">
+            <a href="/pages/aboutme.html" class="nav_conten_a">
                 <i class="fa-solid fa-user"></i>
                 <p>Sobre mi</p>
             </a>
-            <a href="../pages/contactme.html" class="nav_conten_a">
+            <a href="/pages/contactme.html" class="nav_conten_a">
                 <i class="fa-solid fa-envelope"></i>
                 <p>Contactame</p>
             </a>
@@ -202,6 +228,6 @@
 
     <!-- Fin de footer -->
 
-    <script src="../js/java.js"></script> <!-- Enlace al archivo JavaScript -->
+    <script src="../js/java.js"></script>
 </body>
 </html>
