@@ -81,6 +81,7 @@
       background-color: #F8F8F8;
   }
   
+  /*
   .animatedBg{
       position: absolute;
       width: 1000vh;
@@ -95,6 +96,8 @@
       clip-path: circle(40.7% at 50% 50%);
   
   }
+  */
+
   /* FIN DARK MOOD*/
   
   .header-content {
