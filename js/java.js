@@ -1,7 +1,7 @@
-var langItems = document.getElementsByClassName('lenaguage-item');
+var langItems = document.getElementsByClassName('language-item');
 var btnImg = document.getElementById('btn-img');
 var btnTitle = document.getElementById('btn-title');
-var languageMenu = document.querySelector('.lenguage-menu'); // Selector del menú desplegable
+var languageMenu = document.querySelector('.language-menu'); // Selector del menú desplegable
 
 // Agregamos un listener al botón para alternar la visibilidad del menú
 btnImg.addEventListener('click', function() {
@@ -11,18 +11,14 @@ toggleMenu();
 for (var i = 0; i < langItems.length; i++) {
 var langItem = langItems[i];
 langItem.addEventListener('click', function () {
-    changeLanguage(this);
+    changeLanguages(this);
     toggleMenu(); // Llamamos a la función para alternar la visibilidad del menú después de cambiar el idioma
 });
 }
 
-// Función para cambiar el idioma
-function changeLanguage(selectedItem) {
-    btnImg.src = "./img/icon-Idioma/" + selectedItem.dataset.lang + ".png";
-    btnTitle.innerText = selectedItem.dataset.lang;
-    }
 
-function changeLanguage(selectedItem) {
+
+function changeLanguages(selectedItem) {
 btnImg.src = "../img/icon-Idioma/" + selectedItem.dataset.lang + ".png";
 btnTitle.innerText = selectedItem.dataset.lang;
 }
@@ -36,7 +32,34 @@ if (languageMenu.style.display === 'none' || languageMenu.style.display === '') 
 }
 
 
+
+
 //Menu desplegable abou ME//
+
+
+
+
+const flagsElement = document.querySelector(".language-menu");
+
+const textsToChange = document.querySelectorAll("[data-section]");
+
+const changeLanguage = async language=>{
+    const requestJson = await fetch(`../languages/${language}.json`)
+    const texts = await requestJson.json()
+
+    for(const textToChange of textsToChange) {
+    const section = textToChange.dataset.section;
+    const value = textToChange.dataset.value;
+
+    textToChange.innerHTML=texts[section][value];
+    }
+};
+
+flagsElement.addEventListener('click', (e) => {
+    changeLanguage(e.target.parentElement.dataset.lang);
+});
+
+
 
 // MENU DESPLEABLE ABOUT ME//
 
@@ -52,7 +75,8 @@ selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"))
 });
 
 
-// Funciones relacionadas con la animación de palabras
+// INICIO ANIMACION//
+
 var words = document.getElementsByClassName('word');
 var wordArray = [];
 var currentWord = 0;
@@ -108,6 +132,7 @@ letters.push(letter);
 wordArray.push(letters);
 }
 
+// FIN ANIMACION//
 
 /* MENU ESTUDIOS  */
 // Iniciar la animación de palabras y establecer intervalo de cambio
