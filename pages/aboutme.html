@@ -1,169 +1,118 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZIKO</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e35bf355b4.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZIKO</title>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e35bf355b4.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 <body>
+
+<!-- Inicio de header -->
     
-    <!-- Inicio de header -->
-    <header>
-        <div class="header-content">
-            <div class="drop-down-body">
-                <!-- SELECION DE IDIOMAS MENU HEADER-->
-                <a href="#" class="drop-down-btn">
-                    <img src="../img/icon-Idioma/es.png" id="btn-img" alt="es" class="language-img" >
-                    <h3 id="btn-title" class="language-title">
+<header>
+    <div class="header-content">
+        <div class="drop-down-body">
+            <!-- SELECION DE IDIOMAS MENU HEADER-->
+            <a href="#" class="drop-down-btn">
+                <img src="../img/icon-Idioma/es.png" id="btn-img" alt="es" class="language-img" >
+                <h3 id="btn-title" class="language-title">
+                    ES
+                </h3>
+            </a>
+            <ul class="language-menu">
+                <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
+                <li class="language-item" data-lang="en">
+                    <img src="../img/icon-Idioma/en.png" alt="en" class="language-img" >
+                    <h3 class="language-title">
+                        EN
+                    </h3>
+                </li>
+                <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
+                <li class="language-item" data-lang="it">
+                    <img src="../img/icon-Idioma/it.png" alt="it" class="language-img" >
+                    <h3 class="language-title">
+                        IT
+                    </h3>
+                </li>
+                                    <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
+                <li class="language-item" data-lang="de">
+                    <img src="../img/icon-Idioma/de.png" alt="de" class="language-img" >
+                    <h3 class="language-title">
+                        DE
+                    </h3>
+                </li>
+                                    <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
+                <li class="language-item" data-lang="es">
+                    <img src="../img/icon-Idioma/es.png" alt="es" class="language-img" >
+                    <h3 class="language-title">
                         ES
                     </h3>
-                </a>
-                <ul class="language-menu">
-                    <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
-                    <li class="language-item" data-lang="en">
-                        <img src="../img/icon-Idioma/en.png" alt="en" class="language-img" >
-                        <h3 class="language-title">
-                            EN
-                        </h3>
-                    </li>
-                    <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
-                    <li class="language-item" data-lang="it">
-                        <img src="../img/icon-Idioma/it.png" alt="it" class="language-img" >
-                        <h3 class="language-title">
-                            IT
-                        </h3>
-                    </li>
-                                        <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
-                    <li class="language-item" data-lang="de">
-                        <img src="../img/icon-Idioma/de.png" alt="de" class="language-img" >
-                        <h3 class="language-title">
-                            DE
-                        </h3>
-                    </li>
-                                        <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
-                    <li class="language-item" data-lang="es">
-                        <img src="../img/icon-Idioma/es.png" alt="es" class="language-img" >
-                        <h3 class="language-title">
-                            ES
-                        </h3>
-                    </li>
-                </ul>
-            </div>
-
-
-            <!-- Switch aquí -->
-            <label class="button-mod">
-                <input type="checkbox">
-                <ion-icon name="sunny" class="sun"></ion-icon>
-                <ion-icon name="moon" class="moon"></ion-icon>
-                <span class="toggle"></span>
-                <span class="animatedBg"></span>
-            </label>
+                </li>
+            </ul>
         </div>
-    </header>
-    <!-- Fin de header -->
+
+
+        <!-- Switch aquí -->
+        <label class="button-mod">
+            <input type="checkbox">
+            <ion-icon name="sunny" class="sun"></ion-icon>
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <span class="toggle"></span>
+            <span class="animatedBg"></span>
+        </label>
+    </div>
+</header>
+<!-- Fin de header -->
 
 
 
-    <!-- Inicio de main -->
-    <main>
-        <!-- Sección "Sobre mí" -->
-        <section class="aboutme_contenedor">
-            <div class="aboutme_foto_text">
-                <div class="aboutme_header">
-                    <i class="fa-solid fa-circle"></i>
-                    <p>Avaliable for worck</p>
-                </div>
-                <div class="aboutme_section">
-                    <h1>Jose Agustin Rojas</h1>
-                    <h4>Diseñador UX/UI</h4>
-                </div>
-                <div class="aboutme_footer">
-                    <a href="https://www.instagram.com/rojasagus97/" class="aboutme_button_f" target="_blank">Instagram</a>
-                    <a href="https://github.com/Rojas1997" class="aboutme_button_f" target="_blank">Git Hub</a>
-                    <a href="https://www.linkedin.com/in/jose-rojas-23216011a/" class="aboutme_button_f" target="_blank"> Linkedin</a>
-                </div>
-            </div>
-            <div class="aboutme_information">
-                <div class="Content_information">
-                    <h2>Sobre mi</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod alias corporis magnam excepturi
-                        aliquam laudantium quas, eaque nam unde quibusdam.</p>
-                </div>
-            </div>
-            <div class="aboutme_map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.45340273721!2d-58.51569885718407!3d-34.61565476971351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1713821312520!5m2!1ses-419!2sar"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            <div class="aboutme_animation">
-                <img src="/img/gif/1.gif" alt="">
-            </div>
-        </section>
+<!-- Inicio de main -->
+<main>
+<!-- Sección "Sobre mí" -->
+<section class="aboutme_contenedor">
+    <div class="aboutme_foto_text">
+        <div class="aboutme_header">
+            <i class="fa-solid fa-circle"></i>
+            <p>Avaliable for worck</p>
+        </div>
+        <div class="aboutme_section">
+            <h1>Jose Agustin Rojas</h1>
+            <h4>Diseñador UX/UI</h4>
+        </div>
+        <div class="aboutme_footer">
+            <a href="https://www.instagram.com/rojasagus97/" class="aboutme_button_f" target="_blank">Instagram</a>
+            <a href="https://github.com/Rojas1997" class="aboutme_button_f" target="_blank">Git Hub</a>
+            <a href="https://www.linkedin.com/in/jose-rojas-23216011a/" class="aboutme_button_f" target="_blank"> Linkedin</a>
+        </div>
+    </div>
+    <div class="aboutme_information">
+        <div class="Content_information">
+            <h2>Sobre mi</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod alias corporis magnam excepturi
+                aliquam laudantium quas, eaque nam unde quibusdam.</p>
+        </div>
+    </div>
+    <div class="aboutme_map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.45340273721!2d-58.51569885718407!3d-34.61565476971351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1713821312520!5m2!1ses-419!2sar"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <div class="aboutme_animation">
+        <img src="/img/gif/1.gif" alt="">
+    </div>
+</section>
 
-        <div class="menu-contenido-padre">
-                    <!-- Sección "Menú de contenido" -->
-                    <section class="Menu-contenido">
-                        <div class="select-menu" style="margin-top: 20px; margin-bottom: 20px;">
-                            <div class="select-btn">
-                                <span class="Sbtn_text">Formacion academica</span>
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </div>
-                            <ul class="options">
-                                <li class="options">
-                                    <div class="option-hed" onclick="toggleSubMenu(this)">
-                                        <img src="../img/pagei//coder.png" alt="Descripción del icono" width="42" height="42">
-                                        <span class="option-text">Coderhaus</span>
-                                    </div>
-                                    <!-- Nuevo submenú -->
-                                    <ul class="options-sub">
-                                        <li class="option-sub" onclick="showImage('/img/certificado/coder-diseño-grafico.png')">Photoshop e Illustrator</li>
-                                        <li class="option-sub" onclick="showImage('/img/certificado/coder-diseño-ux-ui.png')">Diseño UX/UI</li>
-                                        <li class="option-sub" onclick="showImage('/img/certificado/coder-diseño-ux-ui-avanzado.png')">Diseño UX/UI Avanzado</li>
-                                    </ul>
-                                </li>
-                                <li class="options">
-                                    <div class="option-hed" onclick="toggleSubMenu(this)">
-                                        <img src="../img/pagei/corusera.png" alt="Descripción del icono" width="42" height="42">
-                                        <span class="option-text">Coursera</span>
-                                    </div>
-                                    <!-- Nuevo submenú -->
-                                    <ul class="options-sub">
-                                        <li class="option-sub" onclick="showImage('/img/certificado/ux-1.png')">Llevar a cabo investigaciones en UX</li>
-                                        <li class="option-sub" onclick="showImage('/img/certificado/ux-2.png')">Crear esquemas de página y prototipos de baja fidelidad</li>
-                                        <li class="option-sub" onclick="showImage('/img/certificado/ux-3.png')">Primeros pasos en el proceso de diseño de UX</li>
-                                        <li class="option-sub" onclick="showImage('/img/certificado/ux-4.png')">Aspectos básicos del diseño de la experiencia del usuario</li>
-                                    </ul>
-                                </li>
-                                
-                                <li class="options">
-                                    <div class="option-hed" onclick="toggleSubMenu(this)">
-                                        <img src="../img/pagei/it.png" alt="Descripción del icono" width="42" height="42">
-                                        <span class="option-text">Educacion IT</span>
-                                    </div>
-                                    <!-- Nuevo submenú -->
-                                    <ul class="options-sub" >
-                                        <li class="option-sub" onclick="showImage('/img/certificado/desarollow-html.png')">Desarrollo Web con HTML</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    
-                    <div id="modal" class="modal" onclick="closeModal()">
-                        <img class="modal-content" id="modal-image">
-                    </div>
-                    
-            <!-- SEGUNDO MENU DESPLEGABLE -->
+<div class="menu-contenido-padre">
+            <!-- Sección "Menú de contenido" -->
             <section class="Menu-contenido">
                 <div class="select-menu" style="margin-top: 20px; margin-bottom: 20px;">
                     <div class="select-btn">
@@ -174,61 +123,113 @@
                         <li class="options">
                             <div class="option-hed" onclick="toggleSubMenu(this)">
                                 <img src="../img/pagei//coder.png" alt="Descripción del icono" width="42" height="42">
-                                <span class="option-text">Diseño UX/UI</span>
+                                <span class="option-text">Coderhaus</span>
                             </div>
+                            <!-- Nuevo submenú -->
+                            <ul class="options-sub">
+                                <li class="option-sub" onclick="showImage('/img/certificado/coder-diseño-grafico.png')">Photoshop e Illustrator</li>
+                                <li class="option-sub" onclick="showImage('/img/certificado/coder-diseño-ux-ui.png')">Diseño UX/UI</li>
+                                <li class="option-sub" onclick="showImage('/img/certificado/coder-diseño-ux-ui-avanzado.png')">Diseño UX/UI Avanzado</li>
+                            </ul>
+                        </li>
+                        <li class="options">
+                            <div class="option-hed" onclick="toggleSubMenu(this)">
+                                <img src="../img/pagei/corusera.png" alt="Descripción del icono" width="42" height="42">
+                                <span class="option-text">Coursera</span>
+                            </div>
+                            <!-- Nuevo submenú -->
+                            <ul class="options-sub">
+                                <li class="option-sub" onclick="showImage('/img/certificado/ux-1.png')">Llevar a cabo investigaciones en UX</li>
+                                <li class="option-sub" onclick="showImage('/img/certificado/ux-2.png')">Crear esquemas de página y prototipos de baja fidelidad</li>
+                                <li class="option-sub" onclick="showImage('/img/certificado/ux-3.png')">Primeros pasos en el proceso de diseño de UX</li>
+                                <li class="option-sub" onclick="showImage('/img/certificado/ux-4.png')">Aspectos básicos del diseño de la experiencia del usuario</li>
+                            </ul>
                         </li>
                         
                         <li class="options">
                             <div class="option-hed" onclick="toggleSubMenu(this)">
-                                <img src="../img/pagei//coder.png" alt="Descripción del icono" width="42" height="42">
-                                <span class="option-text">Photoshop e Illustrator</span>
+                                <img src="../img/pagei/it.png" alt="Descripción del icono" width="42" height="42">
+                                <span class="option-text">Educacion IT</span>
                             </div>
-                        </li>
-                        
-                        <li class="options">
-                            <div class="option-hed"onclick="toggleSubMenu(this)">
-                                <img src="../img/pagei//coder.png" alt="Descripción del icono" width="42" height="42">
-                                <span class="option-text">Diseño UX/UI Avanzado</span>
-                            </div>
+                            <!-- Nuevo submenú -->
+                            <ul class="options-sub" >
+                                <li class="option-sub" onclick="showImage('/img/certificado/desarollow-html.png')">Desarrollo Web con HTML</li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
-            </section>    
-            <!-- FIN SEGUDONz -->
+            </section>
+            
+            <div id="modal" class="modal" onclick="closeModal()">
+                <img class="modal-content" id="modal-image">
+            </div>
+            
+    <!-- SEGUNDO MENU DESPLEGABLE -->
+    <section class="Menu-contenido">
+        <div class="select-menu" style="margin-top: 20px; margin-bottom: 20px;">
+            <div class="select-btn">
+                <span class="Sbtn_text">Formacion academica</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <ul class="options">
+                <li class="options">
+                    <div class="option-hed" onclick="toggleSubMenu(this)">
+                        <img src="../img/pagei//coder.png" alt="Descripción del icono" width="42" height="42">
+                        <span class="option-text">Diseño UX/UI</span>
+                    </div>
+                </li>
+                
+                <li class="options">
+                    <div class="option-hed" onclick="toggleSubMenu(this)">
+                        <img src="../img/pagei//coder.png" alt="Descripción del icono" width="42" height="42">
+                        <span class="option-text">Photoshop e Illustrator</span>
+                    </div>
+                </li>
+                
+                <li class="options">
+                    <div class="option-hed"onclick="toggleSubMenu(this)">
+                        <img src="../img/pagei//coder.png" alt="Descripción del icono" width="42" height="42">
+                        <span class="option-text">Diseño UX/UI Avanzado</span>
+                    </div>
+                </li>
+            </ul>
         </div>
+    </section>    
+    <!-- FIN SEGUDONz -->
+</div>
 
-        
-    </main>
-    <!-- Fin de main -->
+    
+</main>
+<!-- Fin de main -->
 
-    <!-- Inicio de footer -->
-    <footer>
-        <div class="nav_bar">
-            <a href="../index.html" class="nav_conten_a">
-                <i class="fa-solid fa-house"></i>
-                <p data-section="footer" data-value="nav-h">Inicio</p>
-            </a>
-            <a href="../pages/proyectos1.html" class="nav_conten_a">
-                <i class="fa-brands fa-space-awesome"></i>
-                <p data-section="footer" data-value="nav-p">Proyectos</p>
-            </a>
-            <a href="../pages/aboutme.html" class="nav_conten_a">
-                <i class="fa-solid fa-user"></i>
-                <p data-section="footer" data-value="nav-s">Sobre mí</p>
-            </a>
-            <a href="../pages/contactme.html" class="nav_conten_a">
-                <i class="fa-solid fa-envelope"></i>
-                <p data-section="footer" data-value="nav-c">Contáctame</p>
-            </a>
-            <a href="https://github.com/Rojas1997" class="nav_conten_a">
-                <i class="fa-brands fa-github"></i>
-                <p data-section="footer" data-value="nav-g">GitHub</p>
-            </a>
-        </div>
-    </footer>
+<!-- Inicio de footer -->
+<footer>
+    <div class="nav_bar">
+        <a href="../index.html" class="nav_conten_a">
+            <i class="fa-solid fa-house"></i>
+            <p data-section="footer" data-value="nav-h">Inicio</p>
+        </a>
+        <a href="../pages/proyectos1.html" class="nav_conten_a">
+            <i class="fa-brands fa-space-awesome"></i>
+            <p data-section="footer" data-value="nav-p">Proyectos</p>
+        </a>
+        <a href="../pages/aboutme.html" class="nav_conten_a">
+            <i class="fa-solid fa-user"></i>
+            <p data-section="footer" data-value="nav-s">Sobre mí</p>
+        </a>
+        <a href="../pages/contactme.html" class="nav_conten_a">
+            <i class="fa-solid fa-envelope"></i>
+            <p data-section="footer" data-value="nav-c">Contáctame</p>
+        </a>
+        <a href="https://github.com/Rojas1997" class="nav_conten_a">
+            <i class="fa-brands fa-github"></i>
+            <p data-section="footer" data-value="nav-g">GitHub</p>
+        </a>
+    </div>
+</footer>
 
-    <!-- Fin de footer -->
+<!-- Fin de footer -->
 
-    <script src="../js/java.js"></script>
+<script src="../js/java.js"></script>
 </body>
 </html>
