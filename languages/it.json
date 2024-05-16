@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "presentation": "Ciao! Il mio nome è Agustin e sono"
+  },
+  "main": {
+    "wisteria": "Designer UX/UI",
+    "belize": "Avventuroso",
+    "pomegranate": "Web Designer",
+    "green": "Curioso",
+    "midnight": "Supporto Tecnico IT"
+},
+  "footer": {
+    "nav-h": "Home",
+    "nav-p": "Progetti",
+    "nav-s": "Su di me",
+    "nav-c": "Contattami",
+    "nav-g": "GitHub"
+  }
+}
