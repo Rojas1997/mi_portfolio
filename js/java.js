@@ -17,12 +17,12 @@ langItem.addEventListener('click', function () {
 }
 
 function changeLanguages(selectedItem) {
-    btnImg.src = "/img/icon-Idioma/" + selectedItem.dataset.lang + ".png";
+    btnImg.src = "/img/icon-idioma/" + selectedItem.dataset.lang + ".png";
     btnTitle.innerText = selectedItem.dataset.lang;
     }
 
 function changeLanguages(selectedItem) {
-btnImg.src = "../img/icon-Idioma/" + selectedItem.dataset.lang + ".png";
+btnImg.src = "../img/icon-idioma/" + selectedItem.dataset.lang + ".png";
 btnTitle.innerText = selectedItem.dataset.lang;
 }
 // Función para alternar la visibilidad del menú
