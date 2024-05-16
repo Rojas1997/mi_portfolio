@@ -1,19 +1,62 @@
 {
-"nav": {
-    "presentation": "HI! my name is Agustin and I am"
-},
-"main": {
-    "wisteria" : "Diseñador-UX/UI",
-    "belize" : "Aventurero",
-    "pomegranate" : "Diseñador-Web",
-    "green" : "Curioso",
-    "midnight" : "Soporte-IT"
-},
-"footer": {
-    "nav-h" : "Inicio",
-    "nav-p" : "Proyectos",
-    "nav-s" : "Sobre mí",
-    "nav-c" : "Contáctame",
-    "nav-g" : "GitHub"
-}
-}
+    "nav": {
+    
+        "presentation": "HI! my name is Agustin and I am"
+    },
+    "main": {
+        "afw": "Disponible para trabajar",
+        "wisteria" : "Diseñador-UX/UI",
+        "belize" : "Aventurero",
+        "pomegranate" : "Diseñador-Web",
+        "green" : "Curioso",
+        "midnight" : "Soporte-IT",
+    
+        "me-mi" : "Sobre mi",
+        "name-me" : "Jose Agustin Rojas",
+        "ah-me" : "Jose Agustin Rojas",
+        "me-dux" : "Diseñador UX/UI",
+        "about-me" : "Lorem",
+    
+        "formacio-a" : "Formacion academica",
+        "pi":"Photoshop e Illustrator",
+        "dux" : "Diseño UX/UI",
+        "duxa" : "Diseño UX/UI Avanzado",
+        "livux" : "Llevar a cabo investigaciones en UX",
+        "cppbf" : "Crear esquemas de página y prototipos de baja fidelidad",
+        "pppdux" : "Primeros pasos en el proceso de diseño de UX",
+        "abdexu" : "Aspectos básicos del diseño de la experiencia del usuario",
+        "dwhtml" : "Desarrollo Web con HTML",
+        "exla" : "Experiencia Laboral",
+    
+        "cc" : "Contacto",
+        "cn" : "Nombre",
+        "ct" : "Teléfono",
+        "ce" : "Email",
+        "cm" : "Mensaje",
+    
+        "p1" : "Smart Haus",
+        "p2" : "Smart Haus",
+        "p3" : "Smart Haus",
+        "p4" : "Smart Haus",
+        "p5" : "Smart Haus",
+        "p6" : "Smart Haus",
+    
+        "it1" :"Hola",
+        "it2" :"Como",
+        "it3" : "estas",
+        "it4" : "excelente",
+        "gc1" : "Titulo",
+        "del" : "proyecto",
+        "gc2" : "información sobre el contenido",
+        "pcpct1" : "Lorem",
+        "pcpct2" : "Lorem"
+    
+    },
+    "footer": {
+        "nav-h" : "Inicio",
+        "nav-p" : "Proyectos",
+        "nav-s" : "Sobre mí",
+        "nav-c" : "Contáctame",
+        "nav-g" : "GitHub"
+    }
+    }

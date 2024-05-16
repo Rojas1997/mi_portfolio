@@ -1,19 +1,62 @@
 {
-"nav": {
-    "presentation": "Hallo! Mein Name ist Agustin und ich bin"
-},
-"main": {
-    "wisteria": "UX/UI Designer",
-    "belize": "Abenteuerlustig",
-    "pomegranate": "Webdesigner",
-    "green": "Neugierig",
-    "midnight": "Technischer IT-Support"
-},
-"footer": {
-    "nav-h": "Startseite",
-    "nav-p": "Projekte",
-    "nav-s": "Über mich",
-    "nav-c": "Kontaktiere mich",
-    "nav-g": "GitHub"
-}
-}
+    "nav": {
+        "presentation": "Hallo! Mein Name ist Agustin und ich bin"
+    },
+    "main": {
+        "afw": "Verfügbar für Arbeit",
+        "wisteria": "UX/UI-Designer",
+        "belize": "Abenteuerlustig",
+        "pomegranate": "Webdesigner",
+        "green": "Neugierig",
+        "midnight": "IT-Support",
+    
+        "me-mi": "Über mich",
+        "name-me": "Jose Agustin Rojas",
+        "ah-me": "Jose Agustin Rojas",
+        "me-dux": "UX/UI-Designer",
+        "about-me": "Lorem",
+    
+    
+        "formacio-a": "Ausbildung",
+        "pi": "Photoshop und Illustrator",
+        "dux": "UX/UI-Design",
+        "duxa": "Fortgeschrittenes UX/UI-Design",
+        "livux": "Durchführung von UX-Recherchen",
+        "cppbf": "Erstellen von Seitenschemata und Low-Fidelity-Prototypen",
+        "pppdux": "Erste Schritte im UX-Designprozess",
+        "abdexu": "Grundlagen des Benutzererlebnis-Designs",
+        "dwhtml": "Webentwicklung mit HTML",
+        "exla": "Berufserfahrung",
+    
+        "cc": "Kontakt",
+        "cn": "Name",
+        "ct": "Telefon",
+        "ce": "E-Mail",
+        "cm": "Nachricht",
+    
+        "p1": "Smart Haus",
+        "p2": "Smart Haus",
+        "p3": "Smart Haus",
+        "p4": "Smart Haus",
+        "p5": "Smart Haus",
+        "p6": "Smart Haus",
+    
+        "it1": "Hallo",
+        "it2": "Wie",
+        "it3": "geht",
+        "it4": "großartig",
+        "gc1": "Titel",
+        "del": "Projekt",
+        "gc2": "Informationen zum Inhalt",
+        "pcpct1": "Lorem",
+        "pcpct2": "Lorem"
+    },
+    "footer": {
+        "nav-h": "Startseite",
+        "nav-p": "Projekte",
+        "nav-s": "Über mich",
+        "nav-c": "Kontaktiere mich",
+        "nav-g": "GitHub"
+    }
+    }
+    
