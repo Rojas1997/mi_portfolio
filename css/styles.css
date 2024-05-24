@@ -86,7 +86,7 @@ input:checked~.toggle{
 background-color: #F8F8F8;
 }
 
-/*
+
 .animatedBg{
 position: absolute;
 width: 1000vh;
@@ -101,7 +101,7 @@ input:checked~.animatedBg{
 clip-path: circle(100% at 50% 50%);
 
 }
-*/
+
 
 /* FIN DARK MOOD*/
 
