@@ -1,76 +1,65 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ZIKO</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/e35bf355b4.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/styles.css">
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIKO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e35bf355b4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
 <body class="body_home">
     
-    <!-- Inicio de header -->
     <header>
         <div class="header-content">
-            <div class="drop-down-body">
-                <!-- SELECION DE IDIOMAS MENU HEADER-->
-                <a href="#" class="drop-down-btn">
-                    <img src="../img/icon-idioma/es.png" id="btn-img" alt="es" class="language-img" >
-                    <h3 id="btn-title" class="language-title">
-                        ES
-                    </h3>
+            <div class="header-content1">
+                <a href="#">
+                    <img src="/img/logo/logo.svg" alt="" style=" width: 80px;">
                 </a>
-                <ul class="language-menu">
-                    <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
-                    <li class="language-item" data-lang="en">
-                        <img src="../img/icon-idioma/en.png" alt="en" class="language-img" >
-                        <h3 class="language-title">
-                            EN
-                        </h3>
-                    </li>
-                    <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
-                    <li class="language-item" data-lang="it">
-                        <img src="../img/icon-idioma/it.png" alt="it" class="language-img" >
-                        <h3 class="language-title">
-                            IT
-                        </h3>
-                    </li>
-                                        <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
-                    <li class="language-item" data-lang="de">
-                        <img src="../img/icon-idioma/de.png" alt="de" class="language-img" >
-                        <h3 class="language-title">
-                            DE
-                        </h3>
-                    </li>
-                                        <!-- SELECION DE IDIOMAS MENU DESPLEGABLE-->
-                    <li class="language-item" data-lang="es">
-                        <img src="../img/icon-idioma/es.png" alt="es" class="language-img" >
-                        <h3 class="language-title">
-                            ES
-                        </h3>
-                    </li>
-                </ul>
+            </div>
+            <div class="header-content2">
+                <div class="drop-down-body">
+                    <!-- SELECCION DE IDIOMAS MENU HEADER -->
+                    <a href="#" class="drop-down-btn">
+                        <img src="../img/icon-Idioma/es.png" id="btn-img" alt="es" class="language-img">
+                        <h3 id="btn-title" class="language-title">ES</h3>
+                    </a>
+                    <ul class="language-menu">
+                        <!-- SELECCION DE IDIOMAS MENU DESPLEGABLE -->
+                        <li class="language-item" data-lang="en">
+                            <img src="../img/icon-Idioma/en.png" alt="en" class="language-img">
+                            <h3 class="language-title">EN</h3>
+                        </li>
+                        <li class="language-item" data-lang="it">
+                            <img src="../img/icon-Idioma/it.png" alt="it" class="language-img">
+                            <h3 class="language-title">IT</h3>
+                        </li>
+                        <li class="language-item" data-lang="de">
+                            <img src="../img/icon-Idioma/de.png" alt="de" class="language-img">
+                            <h3 class="language-title">DU</h3>
+                        </li>
+                        <li class="language-item" data-lang="es">
+                            <img src="../img/icon-Idioma/es.png" alt="es" class="language-img">
+                            <h3 class="language-title">ES</h3>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Switch aquí -->
+                <label class="button-mod">
+                    <input type="checkbox">
+                    <ion-icon name="sunny" class="sun"></ion-icon>
+                    <ion-icon name="moon" class="moon"></ion-icon>
+                    <span class="toggle"></span>
+                    <span class="animatedBg"></span>
+                </label>
             </div>
 
-
-            <!-- Switch aquí -->
-            <label class="button-mod">
-                <input type="checkbox">
-                <ion-icon name="sunny" class="sun"></ion-icon>
-                <ion-icon name="moon" class="moon"></ion-icon>
-                <span class="toggle"></span>
-                <span class="animatedBg"></span>
-            </label>
         </div>
     </header>
-    <!-- Fin de header -->
 
 
     <!-- Contenido del cuerpo de la página -->
@@ -121,15 +110,13 @@
                 <i class="fa-solid fa-envelope"></i>
                 <p data-section="footer" data-value="nav-c">Contáctame</p>
             </a>
-            <a href="https://github.com/Rojas1997" class="nav_conten_a" target="_blank">
+            <a href="https://github.com/Rojas1997" target="_blank" class="nav_conten_a">
                 <i class="fa-brands fa-github"></i>
                 <p data-section="footer" data-value="nav-g">GitHub</p>
             </a>
         </nav>
     </footer>
     <!-- Fin de footer -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../js/java.js"></script> <!-- Enlace al archivo JavaScript -->
     
 </body>
