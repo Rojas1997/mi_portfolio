@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "nav": {
     "presentation": "Ciao! Il mio nome è Agustin e sono"
@@ -63,3 +64,66 @@
     "nav-g": "GitHub"
   }
 }
+=======
+{
+  "nav": {
+    "presentation": "Ciao! Il mio nome è Agustin e sono"
+  },
+  "main": {
+    "afw": "Disponibile per il lavoro",
+    "wisteria": "Designer UX/UI",
+    "belize": "Avventuroso",
+    "pomegranate": "Web Designer",
+    "green": "Curioso",
+    "midnight": "Supporto Tecnico IT",
+
+    "me-mi": "Su di me",
+    "name-me": "Jose Agustin Rojas",
+    "ah-me": "Jose Agustin Rojas",
+    "me-dux": "Designer UX/UI",
+    "about-me": "Lorem",
+    
+
+    "formacio-a": "Formazione accademica",
+    "pi": "Photoshop e Illustrator",
+    "dux": "Design UX/UI",
+    "duxa": "Design UX/UI Avanzato",
+    "livux": "Conduzione di ricerche UX",
+    "cppbf": "Creazione di schemi di pagina e prototipi a bassa fedeltà",
+    "pppdux": "Primi passi nel processo di design UX",
+    "abdexu": "Fondamenti del design dell'esperienza utente",
+    "dwhtml": "Sviluppo Web con HTML",
+    "exla": "Esperienza Lavorativa",
+
+    "cc": "Contatto",
+    "cn": "Nome",
+    "ct": "Telefono",
+    "ce": "Email",
+    "cm": "Messaggio",
+
+    "p1": "Smart Haus",
+    "p2": "Smart Haus",
+    "p3": "Smart Haus",
+    "p4": "Smart Haus",
+    "p5": "Smart Haus",
+    "p6": "Smart Haus",
+
+    "it1": "Ciao",
+    "it2": "Come",
+    "it3": "stai",
+    "it4": "ottimo",
+    "gc1": "Titolo",
+    "del": "progetto",
+    "gc2": "informazioni sul contenuto",
+    "pcpct1": "Lorem",
+    "pcpct2": "Lorem"
+  },
+  "footer": {
+    "nav-h": "Home",
+    "nav-p": "Progetti",
+    "nav-s": "Su di me",
+    "nav-c": "Contattami",
+    "nav-g": "GitHub"
+  }
+}
+>>>>>>> 721aee9ac924cbd1c6636d5606204ca05d8c693e

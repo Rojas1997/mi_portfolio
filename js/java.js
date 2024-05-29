@@ -16,15 +16,13 @@ langItem.addEventListener('click', function () {
 });
 }
 
-function changeLanguages(selectedItem) {
-  btnImg.src = "./img/icon-Idioma/" + selectedItem.dataset.lang + ".png";
-  btnTitle.innerText = selectedItem.dataset.lang;
-  }
+
 
 function changeLanguages(selectedItem) {
-btnImg.src = "../img/icon-Idioma/" + selectedItem.dataset.lang + ".png";
+btnImg.src = "../img/icon-idioma/" + selectedItem.dataset.lang + ".png";
 btnTitle.innerText = selectedItem.dataset.lang;
 }
+
 // Función para alternar la visibilidad del menú
 function toggleMenu() {
 if (languageMenu.style.display === 'none' || languageMenu.style.display === '') {
@@ -78,9 +76,71 @@ selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"))
 });
 
 
+// INICIO ANIMACION//
 
-// Función para mostrar el submenú de opciones estudios
+var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
 
+// Inicialización de la animación de palabras
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+splitLetters(words[i]);
+}
+
+// Función para cambiar las palabras animadas
+function changeWord() {
+var cw = wordArray[currentWord];
+var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+for (var i = 0; i < cw.length; i++) {
+    animateLetterOut(cw, i);
+}
+for (var i = 0; i < nw.length; i++) {
+    nw[i].className = 'letter behind';
+    nw[0].parentElement.style.opacity = 1;
+    animateLetterIn(nw, i);
+}
+
+currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
+
+// Funciones de animación de letras
+function animateLetterOut(cw, i) {
+setTimeout(function() {
+cw[i].className = 'letter out';
+}, i*80);
+}
+
+function animateLetterIn(nw, i) {
+setTimeout(function() {
+nw[i].className = 'letter in';
+}, 340+(i*80));
+}
+
+// Función para dividir las palabras en letras
+function splitLetters(word) {
+var content = word.innerHTML;
+word.innerHTML = '';
+var letters = [];
+for (var i = 0; i < content.length; i++) {
+var letter = document.createElement('span');
+letter.className = 'letter';
+letter.innerHTML = content.charAt(i);
+word.appendChild(letter);
+letters.push(letter);
+}
+
+wordArray.push(letters);
+}
+
+// FIN ANIMACION//
+
+/* MENU ESTUDIOS  */
+// Iniciar la animación de palabras y establecer intervalo de cambio
+changeWord();
+setInterval(changeWord, 4000);
+
+// Función para mostrar el submenú de opciones
 function toggleSubMenu(optionHed) {
 var subMenu = optionHed.nextElementSibling;
 subMenu.classList.toggle('show');
@@ -100,49 +160,3 @@ modal.style.display = 'none'; // Ocultar el modal cuando se hace clic en cualqui
 }
 /* FIN ESTUDIOS  */
 
-
-
-
-
-"use strict";
-
-let words = document.querySelectorAll(".word");
-words.forEach((word) => {
-  let letters = word.textContent.split("");
-  word.textContent = "";
-  letters.forEach((letter) => {
-    let span = document.createElement("span");
-    span.textContent = letter;
-    span.className = "letter";
-    word.append(span);
-  });
-});
-
-let currentWordIndex = 0;
-let maxWordIndex = words.length - 1;
-words[currentWordIndex].style.opacity = "1";
-
-let rotateText = () => {
-  let currentWord = words[currentWordIndex];
-  let nextWord =
-    currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
-  // rotate out letters of current word
-  Array.from(currentWord.children).forEach((letter, i) => {
-    setTimeout(() => {
-      letter.className = "letter out";
-    }, i * 80);
-  });
-  // reveal and rotate in letters of next word
-  nextWord.style.opacity = "1";
-  Array.from(nextWord.children).forEach((letter, i) => {
-    letter.className = "letter behind";
-    setTimeout(() => {
-      letter.className = "letter in";
-    }, 340 + i * 80);
-  });
-  currentWordIndex =
-    currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
-};
-
-rotateText();
-setInterval(rotateText, 4000);

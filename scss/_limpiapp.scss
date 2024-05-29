@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 main {
 margin-top: 5rem;
 .proy_2 {
@@ -25,3 +26,32 @@ margin-top: 5rem;
     }
 }
 }
+=======
+main {
+margin-top: 5rem;
+.proy_2 {
+    .conten {
+    .conten_info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        p {
+        color: #FFF;
+        margin: 4rem 0;
+        font-size: 24px;
+        @include mobile{
+            font-size: 16px;
+            margin: 2rem 0.4rem;
+        }
+        @include mobile-m{
+            font-size: 16px;
+            margin: 2rem 0.4rem;
+        }
+        }
+    }
+    }
+}
+}
+>>>>>>> 721aee9ac924cbd1c6636d5606204ca05d8c693e
