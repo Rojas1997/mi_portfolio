@@ -19,7 +19,7 @@ langItem.addEventListener('click', function () {
 
 
 function changeLanguages(selectedItem) {
-btnImg.src = "../img/icon-idioma/" + selectedItem.dataset.lang + ".png";
+btnImg.src = "./img/icon-idioma/" + selectedItem.dataset.lang + ".png";
 btnTitle.innerText = selectedItem.dataset.lang;
 }
 
