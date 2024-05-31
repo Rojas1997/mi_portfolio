@@ -1,4 +1,4 @@
-var langItems = document.getElementsByClassName('language-item');
+var langItems = document.getElementsByClassName('.language-item');
 var btnImg = document.getElementById('btn-img');
 var btnTitle = document.getElementById('btn-title');
 var languageMenu = document.querySelector('.language-menu'); // Selector del menú desplegable
