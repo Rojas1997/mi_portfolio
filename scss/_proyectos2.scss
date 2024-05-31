@@ -22,6 +22,16 @@ main {
           position: fixed;
           margin: 2rem 1%;
         }
+        @include desktop-small{
+          display: flex;
+          position: fixed;
+          margin: 2rem 1%;
+        }
+        @include desktop-medium{
+          display: flex;
+          position: fixed;
+          margin: 2rem 2.2%;
+        }
         i{
           font-size: 1.4rem;
           color: #FFF;
@@ -32,6 +42,12 @@ main {
             font-size: 1rem;
           }
           @include tablet{
+            font-size: 1rem;
+          }
+          @include desktop-small{
+            font-size: 1rem;
+          }
+          @include desktop-medium{
             font-size: 1rem;
           }
         }
@@ -55,6 +71,14 @@ main {
           margin: 5rem 1% ;
           width: 10rem;
         }
+        @include desktop-small{
+          margin: 5rem 1% ;
+          width: 10rem;
+        }
+        @include desktop-medium{
+          margin: 6rem 2% ;
+          width: 14rem;
+        }
         a {
           color: #FFF;
           text-decoration: none;
@@ -65,6 +89,15 @@ main {
           }
           @include tablet{
             font-size: 14px;
+            margin: 0.3rem;
+          }
+          @include desktop-small{
+            margin: 0.3rem;
+            font-size: 14px;
+          }
+          @include desktop-medium{
+            margin: 0.4rem;
+            font-size: 18px;
           }
         }
       }
@@ -86,8 +119,13 @@ main {
           margin-top: 1rem;
         }
         @include tablet{
-          width: 80%;
-          margin-left: 16%;
+          width: 70%;
+          margin-left: 20%;
+          padding: 1rem;
+        }
+        @include desktop-medium{
+          width: 75%;
+          margin-left: 20%;
           padding: 1rem;
         }
         .conten_hed {
@@ -108,6 +146,14 @@ main {
             margin: 0rem 0rem 2rem;
             padding: 0.4rem;
           }
+          @include desktop-small{
+            margin: 0rem 0rem 2rem;
+            padding: 0.4rem;
+          }
+          @include desktop-medium{
+            margin: 0rem 0rem 2rem;
+            padding: 0.4rem;
+          }
           .hed_title {
             h1, p {
               color: #FFF;
@@ -123,6 +169,12 @@ main {
               @include tablet{
                 font-size: 2rem;
               }
+              @include desktop-small{
+                font-size: 2rem;
+              }
+              @include desktop-medium{
+                font-size: 2rem;
+              }
             }
             p{
               font-size: 2.5rem;
@@ -135,17 +187,37 @@ main {
               @include tablet{
                 font-size: 0.8rem;
               }
+              @include desktop-small{
+                font-size: 0.8rem;
+              }
+              @include desktop-medium{
+                font-size: 0.8rem;
+              }
             } 
           }
   
-          .hed_icon {
+          .post-rating-button {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #FFF;
+            background: transparent;
             width: 4rem;
             height: 4rem;
-            border-radius: 100%;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            &:hover {
+                transform: scale(1.1);
+            }
+        
+            #heart {
+                font-size: 1.8rem;
+                color: #ccc; /* Color de corazón desactivado */
+                transition: transform 0.2s ease;
+            }
+            #heart.active {
+              color: red; /* Color de corazón activado */
+          }
             @include mobile{
               width: 2rem;
               height: 2rem;
@@ -157,6 +229,14 @@ main {
             @include tablet{
               width: 2rem;
               height: 2rem;
+            }
+            @include desktop-small{
+              width: 3rem;
+              height: 3rem;
+            }
+            @include desktop-medium{
+              width: 3rem;
+              height: 3rem;
             }
           }
         }

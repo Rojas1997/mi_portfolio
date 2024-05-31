@@ -4,7 +4,7 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 1rem;
+            margin-top: 2rem;
             .header-content1 {
                 a {
                     img {
@@ -25,6 +25,16 @@ body {
                             margin: 0rem;
                         }
                         @include tablet{
+                            width: 48px;
+                            height: 32px;
+                            margin: 1rem;
+                        }
+                        @include desktop-small{
+                            width: 48px;
+                            height: 32px;
+                            margin: 1rem;
+                        }
+                        @include desktop-medium{
                             width: 48px;
                             height: 32px;
                             margin: 1rem;
@@ -51,6 +61,15 @@ body {
                         margin-right: 1rem;
                         width: 5rem;
                     }
+                    @include desktop-small{
+                        margin-right: 1rem;
+                        width: 5rem;
+                    }
+                    @include desktop-medium{
+                        margin-right: 1rem;
+                        width: 5rem;
+                    }
+
 
                     .drop-down-btn {
                         width: 6.1rem;
@@ -71,6 +90,12 @@ body {
                         @include tablet{
                             width: 4rem;
                         }
+                        @include desktop-small{
+                            width: 4rem;
+                        }
+                        @include desktop-medium{
+                            width: 4rem;
+                        }
                         img {
                             width: 3rem;
                             display:block;
@@ -84,7 +109,12 @@ body {
                             @include tablet{
                                 width: 1.5rem;
                             }
-                            
+                            @include desktop-small{
+                                width: 1.5rem;
+                            }
+                            @include desktop-medium{
+                                width: 1.5rem;
+                            }
                         }
 
                         h3 {
@@ -104,6 +134,12 @@ body {
                                 @include tablet{
                                     font-size: 1rem;
                                     }
+                                    @include desktop-small{
+                                        font-size: 1rem;
+                                        }
+                                        @include desktop-medium{
+                                            font-size: 1rem;
+                                            }
                         }
                     }
 
@@ -138,6 +174,12 @@ body {
                                         @include tablet{
                                             width: 1.5rem;
                                             }
+                                            @include desktop-small{
+                                                width: 1.5rem;
+                                                }
+                                                @include desktop-medium{
+                                                    width: 1.5rem;
+                                                    }
                                 }
 
                             h3 {
@@ -151,12 +193,18 @@ body {
                                 @include mobile {
                                     font-size: 1rem;
                                 }
-                                @include mobile-m{
-                                    font-size: 1rem;
-                                }
-                                @include tablet{
-                                    font-size: 1rem;
-                                }
+                                    @include mobile-m{
+                                        font-size: 1rem;
+                                    }
+                                        @include tablet{
+                                            font-size: 1rem;
+                                        }
+                                            @include desktop-small{
+                                                font-size: 1rem;
+                                            }
+                                            @include desktop-medium{
+                                                font-size: 1rem;
+                                            }
                                 
                             }
                         }
@@ -196,6 +244,14 @@ body {
                         width: 2rem;
                         height: 2rem;
                     }
+                    @include desktop-small{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                    @include desktop-medium{
+                        width: 2rem;
+                        height: 2rem;
+                    }
 
                     input {
                         position: absolute;
@@ -218,7 +274,14 @@ body {
                         @include tablet{
                             font-size: 1.4rem;
                         }
+                        @include desktop-small{
+                            font-size: 1.4rem;
+                        }
+                        @include desktop-medium{
+                            font-size: 1.4rem;
+                        }
                     }
+                    
 
                     input:checked~.moon{
                         transition-delay: 0s;
@@ -243,6 +306,12 @@ body {
                             font-size: 1.4rem;
                         }
                         @include tablet{
+                            font-size: 1.4rem;
+                        }
+                        @include desktop-small{
+                            font-size: 1.4rem;
+                        }
+                        @include desktop-medium{
                             font-size: 1.4rem;
                         }
 
@@ -270,6 +339,11 @@ body {
                             width: 3rem;
                             height: 3rem;
                         }
+                        @include desktop-medium{
+                            width: 4rem;
+                            height: 4rem;
+                        }
+
                     }
 
                 }

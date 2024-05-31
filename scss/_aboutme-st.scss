@@ -13,6 +13,10 @@ main{
             margin: 0;
             margin-bottom: 10rem;
         }
+        @include desktop-small{
+            margin: 0;
+            margin-bottom: 10rem;
+        }
         .Menu-contenido{
             margin: 0;
             display: flex;
@@ -29,6 +33,14 @@ main{
                     margin: 0.5rem;
                 }
                 @include tablet{
+                    width: 95%;
+                    margin: 0.5rem;
+                }
+                @include desktop-small{
+                    width: 95%;
+                    margin: 0.5rem;
+                }
+                @include desktop-medium{
                     width: 95%;
                     margin: 0.5rem;
                 }
@@ -52,6 +64,18 @@ main{
                         height: 2.4rem; /* 55px */
                         font-size: 1rem;
                     }
+                    @include tablet{
+                        height: 2.4rem; /* 55px */
+                        font-size: 1rem;
+                    }
+                    @include desktop-small{
+                        height: 2.4rem; /* 55px */
+                        font-size: 1rem;
+                    }
+                    @include desktop-medium{
+                        height: 2.4rem; /* 55px */
+                        font-size: 1.4rem;
+                    }
                     i{
                         font-size: 2.5rem; /* 25px */
                         transition: 0.3s;
@@ -60,6 +84,15 @@ main{
                         }
                         @include mobile-m{
                             font-size: 1.5rem;
+                        }
+                        @include tablet{
+                            font-size: 1.5rem;
+                        }
+                        @include desktop-small{
+                            font-size: 1.5rem;
+                        }
+                        @include desktop-medium{
+                            font-size: 1.4rem;
                         }
                     }
                     

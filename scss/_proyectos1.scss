@@ -32,7 +32,15 @@
         grid-template-rows: 1fr;
         grid-column-gap: 1rem; /* 10px */
         grid-row-gap: 1rem; /* 10px */
-    
+    }
+    @include desktop-small{
+        margin: 0rem 0rem 10rem;
+        display: grid;
+        padding: 1rem; /* 20px */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 1rem; /* 10px */
+        grid-row-gap: 1rem; /* 10px */
     }
 
     .colum1 { 
@@ -40,7 +48,7 @@
         @include mobile-m{
                 grid-area: 1 / 1 / 2 / 2;
         }
-            a{
+            .colum-cont{
                 text-decoration: none;
                 .contenedor_info{
                     margin-top: 1rem; /* 10px */
@@ -54,6 +62,10 @@
                     img{
                         border-radius: 0.8rem; /* 8px */
                         width: 100%;
+                        transition: filter 0.3s ease;
+                        &:hover{
+                            filter: blur(5px); /* Aplica desenfoque en hover */
+                        }
                     }
                     .info_bar{
                         display: flex;
@@ -65,10 +77,20 @@
                             align-items: center;
 
                             p{
-                                font-size: 16px;
+                                font-size: 21px;
+                                font-weight: 500;
                                 color: #000;
+                                @include mobile{
+                                    font-size: 16px;
+                                }
+                                @include mobile-m{
+                                    font-size: 16px;
+                                }
                                 @include tablet{
                                     font-size: 14px;
+                                }
+                                @include desktop-small{
+                                    font-size: 18px;
                                 }
                             }
                             .p_elemento{
@@ -84,21 +106,46 @@
                                     display: none;
                                 }
                                 @include tablet{
-                                    margin-left: 0.4rem; /* 5px */
+                                    display: none;
+                                    margin-left: 0rem; /* 5px */
+                                }
+                                @include desktop-small{
+                                    font-size: 16px;
+                                    padding: 0.2rem; /* 2px */
                                 }
                             }
                         }
                         .info_icon{
+                                font-size: 21px;
+                                font-weight: 500;
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            @include mobile{
+                                font-size: 16px;
+                            }
+                            @include mobile-m{
+                                font-size: 16px;
+                            }
+                            @include tablet{
+                                font-size: 16px;
+                            }
+                            @include desktop-small{
+                                font-size: 18px;
+                            }
                             i{
                                 padding: 0.6rem; /* 6px */
                                 color: gray;
-                                &:hover{
-                                    color: red;
+                                @include mobile{
+                                    padding: 0.4rem; /* 6px */
+                                }
+                                @include mobile-m{
+                                    padding: 0.3rem; /* 6px */
                                 }
                                 @include tablet{
+                                    padding: 0.1rem; /* 6px */
+                                }
+                                @include desktop-small{
                                     padding: 0.2rem; /* 6px */
                                 }
                             }
@@ -112,70 +159,107 @@
         @include mobile-m{
             grid-area: 1 / 2 / 2 / 3;
     }
-            a{
-                text-decoration: none;
-                .contenedor_info{
-                    margin-top: 1rem; /* 10px */
-                    border-radius: 1rem; /* 10px */
-                    padding: 1rem; /* 10px */
-                    background-color: white;
-                    height: auto;
-                    @include mobile-m{
-                        margin: 1rem 0rem;
-                    }
-                    img{
-                        border-radius: 0.8rem; /* 8px */
-                        width: 100%;
-                    }
-                    .info_bar{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        .info_titulo{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            p{
-                                color: #000;
-                                @include tablet{
-                                    font-size: 14px;
-                                }
-                            }
-                            .p_elemento{
-                                margin-left: 0.5rem; /* 5px */
-                                background: grey;
-                                padding: 0.2rem; /* 2px */
-                                border-radius: 0.4rem; /* 4px */
-                                color: white;
-                                &:hover{
-                                    background: #1794ee;
-                                }
-                                @include mobile-m{
-                                    display: none;
-                                }
-                                @include tablet{
-                                    margin-left: 0.2rem; /* 5px */
-                                }
-                            }
+    .colum-cont{
+        text-decoration: none;
+        .contenedor_info{
+            margin-top: 1rem; /* 10px */
+            border-radius: 1rem; /* 10px */
+            padding: 1rem; /* 10px */
+            background-color: white;
+            height: auto;
+            @include mobile-m{
+                margin: 1rem 0rem;
+            }
+            img{
+                border-radius: 0.8rem; /* 8px */
+                width: 100%;
+            }
+            .info_bar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .info_titulo{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p{
+                        font-size: 21px;
+                        font-weight: 500;
+                        color: #000;
+                        @include mobile{
+                            font-size: 16px;
                         }
-                        .info_icon{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            i{
-                                padding: 0.6rem; /* 6px */
-                                color: gray;
-                                &:hover{
-                                    color: red;
-                                }
-                                @include tablet{
-                                    padding: 0.2rem; /* 6px */
-                                }
-                            }
+                        @include mobile-m{
+                            font-size: 16px;
+                        }
+                        @include tablet{
+                            font-size: 14px;
+                        }
+                        @include desktop-small{
+                            font-size: 18px;
+                        }
+                    }
+                    .p_elemento{
+                        margin-left: 0.5rem; /* 5px */
+                        background: grey;
+                        padding: 0.2rem; /* 2px */
+                        border-radius: 0.4rem; /* 4px */
+                        color: white;
+                        &:hover{
+                            background: #1794ee;
+                        }
+                        @include mobile-m{
+                            display: none;
+                        }
+                        @include tablet{
+                            display: none;
+                            margin-left: 0rem; /* 5px */
+                        }
+                        @include desktop-small{
+                            font-size: 16px;
+                            padding: 0.2rem; /* 2px */
+                        }
+                    }
+                }
+                .info_icon{
+                        font-size: 21px;
+                        font-weight: 500;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include mobile{
+                        font-size: 16px;
+                    }
+                    @include mobile-m{
+                        font-size: 16px;
+                    }
+                    @include tablet{
+                        font-size: 16px;
+                    }
+                    @include desktop-small{
+                        font-size: 18px;
+                    }
+                    i{
+                        padding: 0.6rem; /* 6px */
+                        color: gray;
+                        @include mobile{
+                            padding: 0.4rem; /* 6px */
+                        }
+                        @include mobile-m{
+                            padding: 0.3rem; /* 6px */
+                        }
+                        @include tablet{
+                            padding: 0.1rem; /* 6px */
+                        }
+                        @include desktop-small{
+                            padding: 0.2rem; /* 6px */
                         }
                     }
                 }
             }
+        }
+    }
         }
 
     .colum3 { 
@@ -183,67 +267,107 @@
         @include mobile-m{
             display: none;
     }
-            a{
-                text-decoration: none;
-                .contenedor_info{
-                    margin-top: 1rem; /* 10px */
-                    border-radius: 1rem; /* 10px */
-                    padding: 1rem; /* 10px */
-                    background-color: white;
-                    height: auto;
-                    img{
-                        border-radius: 0.8rem; /* 8px */
-                        width: 100%;
-                    }
-                    .info_bar{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        .info_titulo{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            p{
-                                color: #000;
-                                @include tablet{
-                                    font-size: 14px;
-                                }
-                            }
-                            .p_elemento{
-                                margin-left: 0.5rem; /* 5px */
-                                background: grey;
-                                padding: 0.2rem; /* 2px */
-                                border-radius: 0.4rem; /* 4px */
-                                color: white;
-                                &:hover{
-                                    background: #1794ee;
-                                }
-                                @include mobile-m{
-                                    display: none;
-                                }
-                                @include tablet{
-                                    margin-left: 0.2rem; /* 5px */
-                                }
-                            }
+    .colum-cont{
+        text-decoration: none;
+        .contenedor_info{
+            margin-top: 1rem; /* 10px */
+            border-radius: 1rem; /* 10px */
+            padding: 1rem; /* 10px */
+            background-color: white;
+            height: auto;
+            @include mobile-m{
+                margin: 1rem 0rem;
+            }
+            img{
+                border-radius: 0.8rem; /* 8px */
+                width: 100%;
+            }
+            .info_bar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .info_titulo{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p{
+                        font-size: 21px;
+                        font-weight: 500;
+                        color: #000;
+                        @include mobile{
+                            font-size: 16px;
                         }
-                        .info_icon{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            i{
-                                padding: 0.6rem; /* 6px */
-                                color: gray;
-                                &:hover{
-                                    color: red;
-                                }
-                                @include tablet{
-                                    padding: 0.2rem; /* 6px */
-                                }
-                            }
+                        @include mobile-m{
+                            font-size: 16px;
+                        }
+                        @include tablet{
+                            font-size: 14px;
+                        }
+                        @include desktop-small{
+                            font-size: 18px;
+                        }
+                    }
+                    .p_elemento{
+                        margin-left: 0.5rem; /* 5px */
+                        background: grey;
+                        padding: 0.2rem; /* 2px */
+                        border-radius: 0.4rem; /* 4px */
+                        color: white;
+                        &:hover{
+                            background: #1794ee;
+                        }
+                        @include mobile-m{
+                            display: none;
+                        }
+                        @include tablet{
+                            display: none;
+                            margin-left: 0rem; /* 5px */
+                        }
+                        @include desktop-small{
+                            font-size: 16px;
+                            padding: 0.2rem; /* 2px */
+                        }
+                    }
+                }
+                .info_icon{
+                        font-size: 21px;
+                        font-weight: 500;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include mobile{
+                        font-size: 16px;
+                    }
+                    @include mobile-m{
+                        font-size: 16px;
+                    }
+                    @include tablet{
+                        font-size: 16px;
+                    }
+                    @include desktop-small{
+                        font-size: 18px;
+                    }
+                    i{
+                        padding: 0.6rem; /* 6px */
+                        color: gray;
+                        @include mobile{
+                            padding: 0.4rem; /* 6px */
+                        }
+                        @include mobile-m{
+                            padding: 0.3rem; /* 6px */
+                        }
+                        @include tablet{
+                            padding: 0.1rem; /* 6px */
+                        }
+                        @include desktop-small{
+                            padding: 0.2rem; /* 6px */
                         }
                     }
                 }
             }
+        }
+    }
         }
 
 }

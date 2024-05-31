@@ -30,6 +30,16 @@ footer{
             padding: 0.5rem 1rem;
             border-radius: 1rem; /* 18px */
         }
+        @include desktop-small{
+            width: 560px;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem; /* 18px */
+        }
+        @include desktop-medium{
+            width: 560px;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem; /* 18px */
+        }
         a{  
             margin: 0.5rem;
             display: flex;
@@ -59,6 +69,16 @@ footer{
                 padding: auto; /* 4px */
                 margin: 0.4rem ;
             }
+            @include desktop-small{
+                height: 2rem; /* 24px */
+                padding: auto; /* 4px */
+                margin: 0.4rem ;
+            }
+            @include desktop-medium{
+                height: 2rem; /* 24px */
+                padding: auto; /* 4px */
+                margin: 0.4rem ;
+            }
             p{
                 display: flex;
                 justify-content: center;
@@ -78,6 +98,14 @@ footer{
                     font-weight: 600;
                     font-size: 1.2rem;
                 }
+                @include desktop-small{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+                @include desktop-medium{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
             }
             i{
                 display: flex;
@@ -91,6 +119,12 @@ footer{
                     font-size: 1.2rem;
                 }
                 @include tablet{
+                    font-size: 1.2rem;
+                }
+                @include desktop-small{
+                    font-size: 1.2rem;
+                }
+                @include desktop-medium{
                     font-size: 1.2rem;
                 }
             }
