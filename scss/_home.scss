@@ -174,14 +174,12 @@
                 z-index: -2;
             }
             @include desktop-small{
-                width: auto;
-                height: auto;
-                z-index: -2;
+                width: 29rem;
+                z-index: -1;
             }
             @include desktop-medium{
-                width: auto;
-                height: auto;
-                z-index: -2;
+                width: 29rem;
+                z-index: -1;
             }
             @include desktop-large{
                 width: auto;
