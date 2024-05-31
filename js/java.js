@@ -160,5 +160,3 @@ modal.style.display = 'none'; // Ocultar el modal cuando se hace clic en cualqui
 }
 /* FIN ESTUDIOS  */
 
-
-
