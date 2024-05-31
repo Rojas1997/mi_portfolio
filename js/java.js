@@ -22,7 +22,10 @@ function changeLanguages(selectedItem) {
 btnImg.src = "./img/icon-idioma/" + selectedItem.dataset.lang + ".png";
 btnTitle.innerText = selectedItem.dataset.lang;
 }
-
+function changeLanguages(selectedItem) {
+    btnImg.src = "../img/icon-idioma/" + selectedItem.dataset.lang + ".png";
+    btnTitle.innerText = selectedItem.dataset.lang;
+    }
 // Función para alternar la visibilidad del menú
 function toggleMenu() {
 if (languageMenu.style.display === 'none' || languageMenu.style.display === '') {
