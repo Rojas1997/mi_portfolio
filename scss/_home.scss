@@ -174,12 +174,12 @@
                 z-index: -2;
             }
             @include desktop-small{
-                width: 280px;
-                height: 280px;
+                width: 2rem;
+                z-index: -1;
             }
             @include desktop-medium{
-                width: 280px;
-                height: 280px;
+                width: 2rem;
+                z-index: -1;
             }
             @include desktop-large{
                 width: auto;
@@ -200,11 +200,11 @@
                     z-index: -1;
                 }
                 @include desktop-small{
-                    width: 20rem;
+                    width: auto;
                     z-index: -1;
                 }
                 @include desktop-medium{
-                    width: 20rem;
+                    width: auto;
                     z-index: -1;
                 }
                 @include desktop-large{
