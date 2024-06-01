@@ -4,19 +4,30 @@
         "presentation": "HI! my name is Agustin and I am"
     },
     "main": {
-        "afw": "Disponible para trabajar",
-        "wisteria" : "Diseñador-UX/UI",
-        "belize" : "Aventurero",
-        "pomegranate" : "Diseñador-Web",
-        "green" : "Curioso",
-        "midnight" : "Soporte-IT",
-    
+
+        "hom-h1" : "Hola!",
+        "hom-h2" : "soy Agustin",
+
+        "p-1" : "intoduccion",
+        "p-2" : "Benchmarking",
+        "p-3" : "Nuestros usuarios",
+        "p-4" : "Idear",
+        "p-5" : "Arquitectura  de la informacion",
+        "p-6" : "Userflow",
+        "p-7" : "Wirframe",
+        "p-8" : "Testeos",
+        "p-9" : "UI Kits & Moodbords",
+        "p-10" : "Reporte UX",
+
+        "sub-t" : "plicacion de servicio de limpieza",
+
+        "content-info-1" : "La aplicación redefine la experiencia de servicios de limpieza, fusionando una interfaz intuitiva con algoritmos de emparejamiento avanzados. Ofrece a los usuarios un acceso fácil a profesionales de confianza, optimizando la reserva y pago. La prioridad en la experiencia del usuario (UX) y el diseño de interfaz (UI) garantiza una navegación fluida y una gestión eficiente de servicios de limpieza personalizados.",
+
+        "afw" : "Disponible para trabajar",
         "me-mi" : "Sobre mi",
-        "name-me" : "Jose Agustin Rojas",
-        "ah-me" : "Jose Agustin Rojas",
         "me-dux" : "Diseñador UX/UI",
-        "about-me" : "Lorem",
-    
+        "about-me" : "🚀 Soy Agustín, un estudiante apasionado de diseño web, UX/UI y programación web, dedicado al aprendizaje continuo y la excelencia creativa. Actualmente, me sumerjo en mis estudios para perfeccionar mis habilidades y construir una base sólida 🛠️. <br> Aunque no tengo experiencia laboral formal, mi enfoque se centra en aplicar conocimientos a través de proyectos académicos desafiantes.",
+
         "formacio-a" : "Formacion academica",
         "pi":"Photoshop e Illustrator",
         "dux" : "Diseño UX/UI",
@@ -32,24 +43,7 @@
         "cn" : "Nombre",
         "ct" : "Teléfono",
         "ce" : "Email",
-        "cm" : "Mensaje",
-    
-        "p1" : "Smart Haus",
-        "p2" : "Smart Haus",
-        "p3" : "Smart Haus",
-        "p4" : "Smart Haus",
-        "p5" : "Smart Haus",
-        "p6" : "Smart Haus",
-    
-        "it1" :"Hola",
-        "it2" :"Como",
-        "it3" : "estas",
-        "it4" : "excelente",
-        "gc1" : "Titulo",
-        "del" : "proyecto",
-        "gc2" : "información sobre el contenido",
-        "pcpct1" : "Lorem",
-        "pcpct2" : "Lorem"
+        "cm" : "Mensaje"
     
     },
     "footer": {
