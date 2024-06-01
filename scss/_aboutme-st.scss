@@ -41,15 +41,15 @@ main{
                     margin: 0.5rem;
                 }
                 @include desktop-small{
-                    width: 95%;
+                    width: 60%;
                     margin: 0.5rem;
                 }
                 @include desktop-medium{
-                    width: 95%;
+                    width: 60%;
                     margin: 0.5rem;
                 }
                 @include desktop-large{
-                    width: 95%;
+                    width:60%;
                     margin: 0.5rem;
                 }
                 .select-btn{
