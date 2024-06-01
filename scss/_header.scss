@@ -39,6 +39,11 @@ body {
                             height: 32px;
                             margin: 1rem;
                         }
+                        @include desktop-large{
+                            width: 48px;
+                            height: 32px;
+                            margin: 1rem;
+                        }
                     }
                 }
             }
@@ -69,6 +74,10 @@ body {
                         margin-right: 1rem;
                         width: 5rem;
                     }
+                    @include desktop-large{
+                        margin-right: 1rem;
+                        width: 5rem;
+                    }
 
 
                     .drop-down-btn {
@@ -96,6 +105,9 @@ body {
                         @include desktop-medium{
                             width: 4rem;
                         }
+                        @include desktop-large{
+                            width: 4rem;
+                        }
                         img {
                             width: 3rem;
                             display:block;
@@ -113,6 +125,9 @@ body {
                                 width: 1.5rem;
                             }
                             @include desktop-medium{
+                                width: 1.5rem;
+                            }
+                            @include desktop-large{
                                 width: 1.5rem;
                             }
                         }
@@ -140,10 +155,14 @@ body {
                                         @include desktop-medium{
                                             font-size: 1rem;
                                             }
+                                            @include desktop-large{
+                                                font-size: 1rem;
+                                                }
                         }
                     }
 
                     .language-menu {
+                        z-index: 1;
                         position: absolute;
                         background-color: #808080;
                         border-radius: 0rem 0rem 0.5rem 0.5rem;
@@ -180,6 +199,9 @@ body {
                                                 @include desktop-medium{
                                                     width: 1.5rem;
                                                     }
+                                                    @include desktop-large{
+                                                        width: 1.5rem;
+                                                        }
                                 }
 
                             h3 {
@@ -203,6 +225,9 @@ body {
                                                 font-size: 1rem;
                                             }
                                             @include desktop-medium{
+                                                font-size: 1rem;
+                                            }
+                                            @include desktop-large{
                                                 font-size: 1rem;
                                             }
                                 
@@ -252,6 +277,10 @@ body {
                         width: 2rem;
                         height: 2rem;
                     }
+                    @include desktop-large{
+                        width: 2rem;
+                        height: 2rem;
+                    }
 
                     input {
                         position: absolute;
@@ -278,6 +307,9 @@ body {
                             font-size: 1.4rem;
                         }
                         @include desktop-medium{
+                            font-size: 1.4rem;
+                        }
+                        @include desktop-large{
                             font-size: 1.4rem;
                         }
                     }
@@ -314,6 +346,9 @@ body {
                         @include desktop-medium{
                             font-size: 1.4rem;
                         }
+                        @include desktop-large{
+                            font-size: 1.4rem;
+                        }
 
                     }
 
@@ -340,6 +375,10 @@ body {
                             height: 3rem;
                         }
                         @include desktop-medium{
+                            width: 4rem;
+                            height: 4rem;
+                        }
+                        @include desktop-large{
                             width: 4rem;
                             height: 4rem;
                         }

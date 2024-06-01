@@ -40,6 +40,11 @@ footer{
             padding: 0.5rem 1rem;
             border-radius: 1rem; /* 18px */
         }
+        @include desktop-large{
+            width: 560px;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem; /* 18px */
+        }
         a{  
             margin: 0.5rem;
             display: flex;
@@ -79,6 +84,11 @@ footer{
                 padding: auto; /* 4px */
                 margin: 0.4rem ;
             }
+            @include desktop-large{
+                height: 2rem; /* 24px */
+                padding: auto; /* 4px */
+                margin: 0.4rem ;
+            }
             p{
                 display: flex;
                 justify-content: center;
@@ -106,6 +116,10 @@ footer{
                     font-weight: 600;
                     font-size: 1.2rem;
                 }
+                @include desktop-large{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
             }
             i{
                 display: flex;
@@ -125,6 +139,9 @@ footer{
                     font-size: 1.2rem;
                 }
                 @include desktop-medium{
+                    font-size: 1.2rem;
+                }
+                @include desktop-large{
                     font-size: 1.2rem;
                 }
             }

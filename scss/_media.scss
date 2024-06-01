@@ -34,7 +34,7 @@
 
 // Mixin para computadoras de escritorio grandes (1441px en adelante)
 @mixin desktop-large {
-    @media screen and (min-width: 1441px) {
+    @media screen and (min-width: 1441px)  and (max-width: 1920px) {
         @content;
     }
 }
