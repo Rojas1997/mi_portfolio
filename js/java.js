@@ -16,7 +16,10 @@ langItem.addEventListener('click', function () {
 });
 }
 
-
+function changeLanguagesHome(selectedItem) {
+btnImg.src = "./img/icon-idioma/" + selectedItem.dataset.lang + ".png";
+btnTitle.innerText = selectedItem.dataset.lang;
+}
 
 function changeLanguages(selectedItem) {
 btnImg.src = "../img/icon-idioma/" + selectedItem.dataset.lang + ".png";
