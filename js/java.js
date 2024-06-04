@@ -26,7 +26,7 @@ function changeLanguages(selectedItem) {
         if (exists) {
             btnImg.src = "../img/icon-idioma/" + lang + ".png";
         } else {
-            btnImg.src = "/img/icon-idioma/" + lang + ".png";
+            btnImg.src = "./img/icon-idioma/" + lang + ".png";
         }
     });
     btnTitle.innerText = lang;
@@ -47,7 +47,7 @@ const changeLanguage = async (language) => {
     try {
         let response = await fetch(`../languages/${language}.json`);
         if (!response.ok) {
-            response = await fetch(`/languages/${language}.json`);
+            response = await fetch(`./languages/${language}.json`);
         }
         const texts = await response.json();
 
