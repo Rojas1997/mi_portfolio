@@ -1,0 +1,42 @@
+{
+    "nav": {
+    },
+    "main": {
+        "hom-h1": "Hello! I'm",
+        "hom-h2": "Agustin",
+        "p-1": "Introduction",
+        "p-2": "Benchmarking",
+        "p-3": "Our Users",
+        "p-4": "Ideate",
+        "p-5": "Information Architecture",
+        "p-6": "Userflow",
+        "p-7": "Wireframe",
+        "p-8": "Testing",
+        "p-9": "UI Kits & Moodboards",
+        "p-10": "UX Report",
+        "sub-t": "Cleaning Service Application",
+        "content-info-1": "The application redefines the cleaning service experience, merging an intuitive interface with advanced matching algorithms. It offers users easy access to trusted professionals, optimizing booking and payment. The emphasis on user experience (UX) and interface design (UI) ensures smooth navigation and efficient management of personalized cleaning services.",
+        "afw": "Available for work",
+        "me-mi": "About Me",
+        "me-dux": "UX/UI Designer",
+        "about-me": "🚀 I'm Agustin, a passionate student of web design, UX/UI, and web programming, dedicated to continuous learning and creative excellence. Currently, I am immersing myself in my studies to perfect my skills and build a solid foundation 🛠️. <br> Although I don't have formal work experience, my focus is on applying knowledge through challenging academic projects.",
+        "formacio-a": "Academic Training",
+        "pi": "Photoshop and Illustrator",
+        "dux": "UX/UI Design",
+        "duxa": "Advanced UX/UI Design",
+        "livux": "Conduct UX Research",
+        "cppbf": "Create Low-Fidelity Page Schemas and Prototypes",
+        "pppdux": "First Steps in the UX Design Process",
+        "abdexu": "Basics of User Experience Design",
+        "dwhtml": "Web Development with HTML",
+        "exla": "Work Experience",
+        "cc": "Contact",
+        "cn": "Name",
+        "ct": "Phone",
+        "ce": "Email",
+        "cm": "Message"
+    },
+    "footer": {
+        "Proyectos" : "Projects"
+    }
+}

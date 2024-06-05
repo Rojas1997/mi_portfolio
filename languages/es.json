@@ -1,0 +1,52 @@
+{
+    "nav": {
+    
+        "presentation": "HI! my name is Agustin and I am"
+    },
+    "main": {
+
+        "hom-h1" : "Hola! soy ",
+        "hom-h2" : "Agustin",
+
+        "p-1" : "intoduccion",
+        "p-2" : "Benchmarking",
+        "p-3" : "Nuestros usuarios",
+        "p-4" : "Idear",
+        "p-5" : "Arquitectura  de la informacion",
+        "p-6" : "Userflow",
+        "p-7" : "Wirframe",
+        "p-8" : "Testeos",
+        "p-9" : "UI Kits & Moodbords",
+        "p-10" : "Reporte UX",
+
+        "sub-t" : "plicacion de servicio de limpieza",
+
+        "content-info-1" : "La aplicación redefine la experiencia de servicios de limpieza, fusionando una interfaz intuitiva con algoritmos de emparejamiento avanzados. Ofrece a los usuarios un acceso fácil a profesionales de confianza, optimizando la reserva y pago. La prioridad en la experiencia del usuario (UX) y el diseño de interfaz (UI) garantiza una navegación fluida y una gestión eficiente de servicios de limpieza personalizados.",
+
+        "afw" : "Disponible para trabajar",
+        "me-mi" : "Sobre mi",
+        "me-dux" : "Diseñador UX/UI",
+        "about-me" : "🚀 Soy Agustín, un estudiante apasionado de diseño web, UX/UI y programación web, dedicado al aprendizaje continuo y la excelencia creativa. Actualmente, me sumerjo en mis estudios para perfeccionar mis habilidades y construir una base sólida 🛠️. <br> Aunque no tengo experiencia laboral formal, mi enfoque se centra en aplicar conocimientos a través de proyectos académicos desafiantes.",
+
+        "formacio-a" : "Formacion academica",
+        "pi":"Photoshop e Illustrator",
+        "dux" : "Diseño UX/UI",
+        "duxa" : "Diseño UX/UI Avanzado",
+        "livux" : "Llevar a cabo investigaciones en UX",
+        "cppbf" : "Crear esquemas de página y prototipos de baja fidelidad",
+        "pppdux" : "Primeros pasos en el proceso de diseño de UX",
+        "abdexu" : "Aspectos básicos del diseño de la experiencia del usuario",
+        "dwhtml" : "Desarrollo Web con HTML",
+        "exla" : "Experiencia Laboral",
+    
+        "cc" : "Contacto",
+        "cn" : "Nombre",
+        "ct" : "Teléfono",
+        "ce" : "Email",
+        "cm" : "Mensaje"
+    
+    },
+    "footer": {
+        "Proyectos": "Proyectos"
+    }
+    }

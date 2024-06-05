@@ -1,0 +1,393 @@
+body {
+    header {
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+            .header-content1 {
+                a {
+                    img {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 62px;
+                        height: 48px;
+                        margin: 2rem 1rem;
+                        @include mobile{
+                            width: 48px;
+                            height: 32px;
+                            margin: 0rem;
+                        }
+                        @include mobile-m{
+                            width: 48px;
+                            height: 32px;
+                            margin: 0rem;
+                        }
+                        @include tablet{
+                            width: 48px;
+                            height: 32px;
+                            margin: 1rem;
+                        }
+                        @include desktop-small{
+                            width: 48px;
+                            height: 32px;
+                            margin: 1rem;
+                        }
+                        @include desktop-medium{
+                            width: 48px;
+                            height: 32px;
+                            margin: 1rem;
+                        }
+                        @include desktop-large{
+                            width: 48px;
+                            height: 32px;
+                            margin: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .header-content2 {
+                display: flex;
+
+                .drop-down-body {
+                    position: relative;
+                    width: 9rem;
+                    @include mobile{
+                        margin-right: 1rem;
+                        width: 5rem;
+                    }
+                    @include mobile-m{
+                        margin-right: 1rem;
+                        width: 5rem;
+                    }
+                    @include tablet{
+                        margin-right: 1rem;
+                        width: 5rem;
+                    }
+                    @include desktop-small{
+                        margin-right: 1rem;
+                        width: 5rem;
+                    }
+                    @include desktop-medium{
+                        margin-right: 1rem;
+                        width: 5rem;
+                    }
+                    @include desktop-large{
+                        margin-right: 1rem;
+                        width: 5rem;
+                    }
+
+
+                    .drop-down-btn {
+                        width: 6.1rem;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        padding: 0.5rem;
+                        border-radius: 0.5rem 0.5rem 0rem 0rem;
+                        color: #fff;
+                        border: 0.3rem;
+                        cursor: pointer;
+                        @include mobile{
+                            width: 4rem;
+                        }
+                        @include mobile-m{
+                            width: 4rem;
+                        }
+                        @include tablet{
+                            width: 4rem;
+                        }
+                        @include desktop-small{
+                            width: 4rem;
+                        }
+                        @include desktop-medium{
+                            width: 4rem;
+                        }
+                        @include desktop-large{
+                            width: 4rem;
+                        }
+                        img {
+                            width: 3rem;
+                            display:block;
+                            border-radius: 5px;
+                            @include mobile {
+                                width: 1.5rem;
+                            }
+                            @include mobile-m{
+                                width: 1.5rem;
+                            }
+                            @include tablet{
+                                width: 1.5rem;
+                            }
+                            @include desktop-small{
+                                width: 1.5rem;
+                            }
+                            @include desktop-medium{
+                                width: 1.5rem;
+                            }
+                            @include desktop-large{
+                                width: 1.5rem;
+                            }
+                        }
+
+                        h3 {
+                            text-decoration: none;
+                            color: #fff;
+                            padding-left: 1rem;
+                            width: auto;
+                            text-align: center;
+                            text-transform: uppercase;
+                            font-size: 1.5rem;
+                            @include mobile{
+                            font-size: 1rem;
+                            }
+                            @include mobile-m{
+                                font-size: 1rem;
+                                }
+                                @include tablet{
+                                    font-size: 1rem;
+                                    }
+                                    @include desktop-small{
+                                        font-size: 1rem;
+                                        }
+                                        @include desktop-medium{
+                                            font-size: 1rem;
+                                            }
+                                            @include desktop-large{
+                                                font-size: 1rem;
+                                                }
+                        }
+                    }
+
+                    .language-menu {
+                        z-index: 1;
+                        position: absolute;
+                        background-color: #808080;
+                        border-radius: 0rem 0rem 0.5rem 0.5rem;
+                        border: 0.3rem;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: opacity 0.4s, visibility 0.4s;
+
+                        .language-item {
+                            display: flex;
+                            align-items: center;
+                            padding: 0.5rem;
+                            cursor: pointer;
+                            border-radius: 0.2rem;
+                            transition: background-color 0.4s;
+                            list-style: none;
+
+                            img {
+                                width: 3rem;
+                                display:block;
+                                border-radius: 5px;
+                                @include mobile{
+                                    width: 1.5rem;
+                                    }
+                                    @include mobile-m{
+                                        width: 1.5rem;
+                                        }
+                                        @include tablet{
+                                            width: 1.5rem;
+                                            }
+                                            @include desktop-small{
+                                                width: 1.5rem;
+                                                }
+                                                @include desktop-medium{
+                                                    width: 1.5rem;
+                                                    }
+                                                    @include desktop-large{
+                                                        width: 1.5rem;
+                                                        }
+                                }
+
+                            h3 {
+                                text-decoration: none;
+                                color: #fff;
+                                padding-left: 1rem;
+                                width: auto;
+                                text-align: center;
+                                text-transform: uppercase;
+                                font-size: 1.5rem;
+                                @include mobile {
+                                    font-size: 1rem;
+                                }
+                                    @include mobile-m{
+                                        font-size: 1rem;
+                                    }
+                                        @include tablet{
+                                            font-size: 1rem;
+                                        }
+                                            @include desktop-small{
+                                                font-size: 1rem;
+                                            }
+                                            @include desktop-medium{
+                                                font-size: 1rem;
+                                            }
+                                            @include desktop-large{
+                                                font-size: 1rem;
+                                            }
+                                
+                            }
+                        }
+                    }
+
+                    .drop-down-btn:hover + .language-menu,  /* agregar*/
+                    .language-menu:hover{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                    .language-item:hover{
+                        background-color: #5fcbff;  /* agregar*/
+                    }
+                }
+
+                .button-mod {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 4rem;
+                    height: 4rem;
+                    margin-right: 2rem;
+                    border-radius: 50%;
+                    cursor: pointer;
+
+                    @include mobile{
+                        width: 2rem;
+                        height: 2rem;
+                        margin-right: 1rem;
+                    }
+                    @include mobile-m{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                    @include tablet{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                    @include desktop-small{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                    @include desktop-medium{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                    @include desktop-large{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                    }
+
+                    .sun {
+                        position: absolute;
+                        font-size: 1.8em;
+                        color: #666;
+                        filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+                        transform: scale(0);
+                        transition: 1s ease;
+                        @include mobile{
+                            font-size: 1.4rem;
+                        }
+                        @include mobile-m{
+                            font-size: 1.4rem;
+                        }
+                        @include tablet{
+                            font-size: 1.4rem;
+                        }
+                        @include desktop-small{
+                            font-size: 1.4rem;
+                        }
+                        @include desktop-medium{
+                            font-size: 1.4rem;
+                        }
+                        @include desktop-large{
+                            font-size: 1.4rem;
+                        }
+                    }
+                    
+
+                    input:checked~.moon{
+                        transition-delay: 0s;
+                        transform: rotate(360deg) scale(0);
+                    }
+
+                    input:checked~.sun{
+                        transition-delay: .8s;
+                        transform:  scale(1) rotate(360deg);
+                    }
+
+                    .moon {
+                        font-size: 1.8em;
+                        color: #666;
+                        filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+                        transition: 1s;
+                        transition-delay: .8s;
+                        @include mobile{
+                            font-size: 1.4rem;
+                        }
+                        @include mobile-m{
+                            font-size: 1.4rem;
+                        }
+                        @include tablet{
+                            font-size: 1.4rem;
+                        }
+                        @include desktop-small{
+                            font-size: 1.4rem;
+                        }
+                        @include desktop-medium{
+                            font-size: 1.4rem;
+                        }
+                        @include desktop-large{
+                            font-size: 1.4rem;
+                        }
+
+                    }
+
+                    .toggle {
+                        position: absolute;
+                        display: block;
+                        width: 4rem;
+                        height: 4rem;
+                        background-color: #2b2b2b;
+                        border-radius: 50%;
+                        box-shadow: inset 0 8px 60px rgba(0, 0, 0, .1), inset 0 8px 8px rgba(0, 0, 0, .1), inset 0 -4px 4px rgba(0, 0, 0, .1);
+                        z-index: -1;
+                        transition: 1s;
+                        @include mobile{
+                            width: 3rem;
+                            height: 3rem;
+                        }
+                        @include mobile-m{
+                            width: 3rem;
+                            height: 3rem;
+                        }
+                        @include tablet{
+                            width: 3rem;
+                            height: 3rem;
+                        }
+                        @include desktop-medium{
+                            width: 4rem;
+                            height: 4rem;
+                        }
+                        @include desktop-large{
+                            width: 4rem;
+                            height: 4rem;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
