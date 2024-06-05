@@ -95,7 +95,7 @@ body {
 @include mobile {
     body {
         .menu {
-            margin: 1rem;
+            margin-bottom: 1rem;
             bottom: 20px;
             position: absolute;
             transform: translate(-50%, 50%);
