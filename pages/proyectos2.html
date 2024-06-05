@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Proyecto de Ziko: Aplicación de servicio de limpieza diseñada en Figma. Descubre cómo Ziko crea soluciones innovadoras y efectivas en diseño de aplicaciones.">
     <meta name="keywords" content="aplicación de servicio de limpieza, diseño de aplicaciones en Figma, proyecto de Ziko, diseño UX/UI, Ziko, aplicaciones innovadoras, Figma, diseño de servicios de limpieza">
-    <title>ZIKO</title>
+    <title> LimpiaApp | ZIKO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/e35bf355b4.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="../img/logo/logo.svg">
 </head>
 <body>
     
@@ -110,34 +111,37 @@
 <!-- fin de: main -->
 
     <!-- Inicio de footer -->
-    <footer>
-        <nav class="nav_bar">
-            <a href="../index.html" class="nav_conten_a">
+    <footer class="menu">
+        <div class="indicator"></div>
+        <div class="list">
+
+            <a href="../index.html"  class="item active" tooltip="Home" color="#d0254e">
                 <i class="fa-solid fa-house"></i>
-                <p data-section="footer" data-value="nav-h">Inicio</p>
             </a>
-            <a href="../pages/proyectos1.html" class="nav_conten_a">
-                <i class="fa-brands fa-space-awesome"></i>
-                <p data-section="footer" data-value="nav-p">Proyectos</p>
+
+            <a href="../pages/proyectos1.html"  class="item" tooltip="Proyectos" color="#2d1be4">
+                <i class="fa-solid fa-meteor"></i>
             </a>
-            <a href="../pages/aboutme.html" class="nav_conten_a">
-                <i class="fa-solid fa-user"></i>
-                <p data-section="footer" data-value="nav-s">Sobre mí</p>
+
+            <a href="../pages/aboutme.html"  class="item" tooltip="Me" color="#555">
+                <i class="fa-solid fa-skull"></i>
             </a>
-            <a href="../pages/contactme.html" class="nav_conten_a">
+
+            <a href="../pages/contactme.html"  class="item" tooltip="Mail" color="#00acee">
                 <i class="fa-solid fa-envelope"></i>
-                <p data-section="footer" data-value="nav-c">Contáctame</p>
             </a>
-            <a href="https://github.com/Rojas1997" target="_blank" class="nav_conten_a">
-                <i class="fa-brands fa-github"></i>
-                <p data-section="footer" data-value="nav-g" >GitHub</p>
+
+            <a href="https://github.com/Rojas1997" target="_blank" class="item" tooltip="Git" color="#b145eb">
+                <i class="fa-brands fa-gitlab"></i>
             </a>
-        </nav>
+
+        </div>
     </footer>
     <!-- Fin de footer -->
 
     <script src="../js/java.js"></script>
     <script src="../js/animation.js"></script>
+    <script src="../js/navbar.js"></script>
     
 </body>
 </html>
