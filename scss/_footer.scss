@@ -97,6 +97,7 @@ body {
 @include mobile {
     body {
         .menu {
+            margin-bottom: 1rem;
             padding: 12px; // Un poco más grande que el original
             .indicator {
                 width: 30px; // Un poco más grande que el original
