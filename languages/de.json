@@ -1,10 +1,10 @@
 {
     "nav": {
-        "presentation": "Hallo! Mein Name ist Agustin und ich bin"
+        
     },
     "main": {
-        "hom-h1": "Hallo!",
-        "hom-h2": "Ich bin Agustin",
+        "hom-h1": "Hallo! Ich bin",
+        "hom-h2": "Agustin",
         "p-1": "Einführung",
         "p-2": "Benchmarking",
         "p-3": "Unsere Benutzer",
@@ -38,10 +38,6 @@
         "cm": "Nachricht"
     },
     "footer": {
-        "nav-h": "Startseite",
-        "nav-p": "Projekte",
-        "nav-s": "Über mich",
-        "nav-c": "Kontaktiere mich",
-        "nav-g": "GitHub"
+        "Proyectos" : "Projekte"
     }
 }

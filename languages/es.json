@@ -5,8 +5,8 @@
     },
     "main": {
 
-        "hom-h1" : "Hola!",
-        "hom-h2" : "soy Agustin",
+        "hom-h1" : "Hola! soy ",
+        "hom-h2" : "Agustin",
 
         "p-1" : "intoduccion",
         "p-2" : "Benchmarking",
@@ -47,10 +47,6 @@
     
     },
     "footer": {
-        "nav-h" : "Inicio",
-        "nav-p" : "Proyectos",
-        "nav-s" : "Sobre mí",
-        "nav-c" : "Contáctame",
-        "nav-g" : "GitHub"
+        "Proyectos": "Proyectos"
     }
     }

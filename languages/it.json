@@ -3,8 +3,8 @@
       "presentation": "Ciao! Mi chiamo Agustín e sono"
   },
   "main": {
-      "hom-h1": "Ciao!",
-      "hom-h2": "Sono Agustín",
+      "hom-h1": "Ciao! Sono ",
+      "hom-h2": "Agustín",
       "p-1": "Introduzione",
       "p-2": "Benchmarking",
       "p-3": "I nostri utenti",
@@ -38,10 +38,6 @@
       "cm": "Messaggio"
   },
   "footer": {
-      "nav-h": "Home",
-      "nav-p": "Progetti",
-      "nav-s": "Su di me",
-      "nav-c": "Contattami",
-      "nav-g": "GitHub"
+    "Proyectos": "Progetti"
   }
 }

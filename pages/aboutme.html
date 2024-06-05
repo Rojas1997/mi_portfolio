@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sobre Ziko: Conoce a Ziko, diseñador UX/UI y desarrollador Front-End. Descubre su formación, experiencia y trayectoria profesional.">
     <meta name="keywords" content="sobre Ziko, biografía de Ziko, estudios de Ziko, experiencia de Ziko, trayectoria profesional, diseñador UX/UI, desarrollador front-end, formación en diseño web">
-    <title>ZIKO</title>
+    <title>Sobre Mi | ZIKO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/e35bf355b4.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="../img/logo/logo.svg">
 </head>
 <body>
     
@@ -54,9 +55,9 @@
                 </div>
                 <!-- Switch aquí -->
                 <label class="button-mod">
-                    <input type="checkbox">
-                    <ion-icon name="sunny" class="sun"></ion-icon>
-                    <ion-icon name="moon" class="moon"></ion-icon>
+                    <input type="checkbox" class="main_check">
+                    <ion-icon id="light" name="sunny" class="sun"></ion-icon>
+                    <ion-icon id="dark" name="moon" class="moon"></ion-icon>
                     <span class="toggle"></span>
                     <span class="animatedBg"></span>
                 </label>
@@ -82,9 +83,9 @@
                     <h2 data-section="main" data-value="me-dux">Diseñador UX/UI</h4>
                 </div>
                 <div class="aboutme_footer">
-                    <a href="https://www.instagram.com/rojasagus97/" class="aboutme_button_f" target="_blank">Instagram</a>
-                    <a href="https://github.com/Rojas1997" class="aboutme_button_f" target="_blank">Git Hub</a>
-                    <a href="https://www.linkedin.com/in/jose-rojas-23216011a/" class="aboutme_button_f" target="_blank"> Linkedin</a>
+                    <a href="https://www.instagram.com/rojasagus97/" class="aboutme_button_f" >Instagram</a>
+                    <a href="https://github.com/Rojas1997" class="aboutme_button_f" >Git Hub</a>
+                    <a href="https://www.linkedin.com/in/jose-rojas-23216011a/" class="aboutme_button_f" > Linkedin</a>
                 </div>
             </div>
             <div class="aboutme_information">
@@ -195,33 +196,38 @@
     <!-- Fin de main -->
 
     <!-- Inicio de footer -->
-    <footer>
-        <nav class="nav_bar">
-            <a href="../index.html" class="nav_conten_a">
+    <footer class="menu">
+        <div class="indicator"></div>
+        <div class="list">
+
+            <a href="../index.html"  class="item active" tooltip="Home" color="#d0254e">
                 <i class="fa-solid fa-house"></i>
-                <p data-section="footer" data-value="nav-h">Inicio</p>
             </a>
-            <a href="../pages/proyectos1.html" class="nav_conten_a">
-                <i class="fa-brands fa-space-awesome"></i>
-                <p data-section="footer" data-value="nav-p">Proyectos</p>
+
+            <a href="../pages/proyectos1.html"  class="item" tooltip="Proyectos" color="#2d1be4">
+                <i class="fa-solid fa-meteor"></i>
             </a>
-            <a href="../pages/aboutme.html" class="nav_conten_a">
-                <i class="fa-solid fa-user"></i>
-                <p data-section="footer" data-value="nav-s">Sobre mí</p>
+
+            <a href="../pages/aboutme.html"  class="item" tooltip="Me" color="#555">
+                <i class="fa-solid fa-skull"></i>
             </a>
-            <a href="../pages/contactme.html" class="nav_conten_a">
+
+            <a href="../pages/contactme.html"  class="item" tooltip="Mail" color="#00acee">
                 <i class="fa-solid fa-envelope"></i>
-                <p data-section="footer" data-value="nav-c">Contáctame</p>
             </a>
-            <a href="https://github.com/Rojas1997" target="_blank" class="nav_conten_a">
-                <i class="fa-brands fa-github"></i>
-                <p data-section="footer" data-value="nav-g"  >GitHub</p>
+
+            <a href="https://github.com/Rojas1997" target="_blank" class="item" tooltip="Git" color="#b145eb">
+                <i class="fa-brands fa-gitlab"></i>
             </a>
-        </nav>
+
+        </div>
     </footer>
 
     <!-- Fin de footer -->
 
-    <script src="../js/java.js"></script>
+    <script src="../js/darkmod.js"></script>
+    <script src="../js/lenguage.js"></script>
+    <script src="../js/menuform.js"></script>
+    <script src="../js/navbar.js"></script>
 </body>
 </html>
